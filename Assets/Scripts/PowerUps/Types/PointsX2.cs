@@ -5,12 +5,11 @@ namespace PowerUps.Types
 {
     public class PointsX2 : PowerUp
     {
-        public delegate void ptsX2Event();
-
-        public static event ptsX2Event ptsx2Picked; 
+        public delegate void PointsX2Even();
+        public static event PointsX2Even ptsx2Event; 
         private void OnCollisionEnter(Collision other)
         {
-            ptsx2Picked?.Invoke();
+            ptsx2Event?.Invoke();
             Destroy(gameObject);
         }
     }

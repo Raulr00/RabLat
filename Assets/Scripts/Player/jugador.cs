@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using PowerUps.Types;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -27,6 +29,22 @@ namespace Player
             desplazamiento = new Vector3(0, 0, 0.01f);
             StartCoroutine(aumentarVelcidad());
             Debug.Log(transform.forward);
+        }
+
+        private void OnEnable()
+        {
+            Slow.slowEvent += HanldeSlowPwrUp;
+        }
+
+        private void OnDisable()
+        {
+            Slow.slowEvent -= HanldeSlowPwrUp;
+        }
+
+        [ContextMenu("HandleSlow")]
+        private void HanldeSlowPwrUp(float slow)
+        {
+            velPersonaje -= slow;
         }
 
         // Update is called once per frame

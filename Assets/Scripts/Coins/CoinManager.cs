@@ -34,7 +34,13 @@ namespace coins
             }
 
             monedas.monedaRecodiga += AddCoin;
-            PointsX2.ptsx2Picked += HandleX2Boost;
+            PointsX2.ptsx2Event += HandleX2Boost;
+        }
+
+        private void OnDestroy()
+        {
+            monedas.monedaRecodiga -= AddCoin;
+            PointsX2.ptsx2Event -= HandleX2Boost;
         }
 
         private void HandleX2Boost()
