@@ -9,7 +9,7 @@ namespace PowerUps
     public class PowerUpConfig : ScriptableObject  
     {
         [SerializeField]public PowerUp[] powerUps;
-        public string[] ids;
+        [HideInInspector]public string[] ids;
         private Dictionary<string, PowerUp> IdToPwrUp;
 
         private void Awake()
