@@ -3,12 +3,13 @@ using UnityEngine;
 
 namespace PowerUps.Types
 {
-    public class PointsX2 : PowerUp
+    public class FullHP : PowerUp
     {
-        public static event PowerUpEvent ptsx2Event; 
+        public static event PowerUpEvent fullHpEvent;
+
         private void OnCollisionEnter(Collision other)
         {
-            ptsx2Event?.Invoke();
+            fullHpEvent?.Invoke();
             Destroy(gameObject);
         }
     }

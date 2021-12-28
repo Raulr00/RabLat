@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 760423724348134840}
   - component: {fileID: 760423724348134841}
   - component: {fileID: 760423724348134822}
-  - component: {fileID: -1245709959295226045}
-  - component: {fileID: 9102391752757893489}
+  - component: {fileID: 6171561166314933532}
+  - component: {fileID: -2076535795088553468}
   m_Layer: 0
-  m_Name: PointsX2
+  m_Name: FullHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,20 +83,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-1245709959295226045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760423724348134820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e85d910791f44b097ee847ae408c11c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: PointsX2
---- !u!65 &9102391752757893489
+--- !u!65 &6171561166314933532
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,3 +96,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-2076535795088553468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760423724348134820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c5ce29ab44d43c985c8ef425b2777f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 
