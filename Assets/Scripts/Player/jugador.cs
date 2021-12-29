@@ -24,16 +24,25 @@ namespace Player
         int aux = 0;
         float offsetZ = 0;
 
+
+        bool moverse = false;//Esto sera true cuando le demos a play, sirve para la animacion idle de la rata al empezar
+
         void Start()
         {
             desplazamiento = new Vector3(0, 0, 0.01f);
             StartCoroutine(aumentarVelcidad());
             Debug.Log(transform.forward);
         }
+        //Se llama cuando se le da play
+        void empezar() {
+            moverse = true;
+        }
 
         private void OnEnable()
         {
             Slow.slowEvent += HanldeSlowPwrUp;
+            menuPrincipal.empezarPartida += empezar;
+
         }
 
         private void OnDisable()
@@ -50,6 +59,11 @@ namespace Player
         // Update is called once per frame
         void Update()
         {
+            Debug.Log("anim idle");
+            if (!moverse)
+                return;
+
+
             //  Debug.Log("Vel personaje " + GetComponent<Rigidbody>().velocity);
             if (Input.GetKeyDown(KeyCode.A) || swipeMovil.swipeLeft)
             {
@@ -59,7 +73,7 @@ namespace Player
                     moves = 3;
                 }
 
-                if (moves == 1 || moves == 2)
+                if (moves == 1 || moves == 3)
                 {
                     offsetZ = Input.acceleration.z;
                 }
@@ -78,7 +92,7 @@ namespace Player
                 transform.Rotate(new Vector3(0, 90, 0));
                 Debug.Log(transform.forward);
 
-                if (moves == 1 || moves == 2)
+                if (moves == 1 || moves == 3)
                 {
                     offsetZ = Input.acceleration.z;
                 }
@@ -139,8 +153,8 @@ namespace Player
             {
                 //   texto.text = "FALSO";
 
-                direccion = new Vector3(gameObject.transform.forward.x, gameObject.transform.forward.y,
-                    gameObject.transform.forward.z + (dir.z - offsetZ));
+                direccion = new Vector3(gameObject.transform.forward.x + dir.x, gameObject.transform.forward.y,
+                    gameObject.transform.forward.z) ;
                 transform.Translate(direccion * Time.deltaTime * velPersonaje, Space.World);
                 // transform.Translate(gameObject.transform.forward * Time.deltaTime * velPersonaje, Space.World);
                 //  int i = (int)transform.forward.x;
@@ -149,17 +163,13 @@ namespace Player
             {
                 //      texto.text = "FALSO";
 
-                direccion = new Vector3(gameObject.transform.forward.x + dir.x, gameObject.transform.forward.y,
-                    gameObject.transform.forward.z);
+                direccion = new Vector3(gameObject.transform.forward.x, gameObject.transform.forward.y,
+                gameObject.transform.forward.z - (dir.z - offsetZ));
 
 
                 transform.Translate(direccion * Time.deltaTime * velPersonaje, Space.World);
-                int i = (int) transform.forward.x;
             }
-            else
-            {
-                int i = (int) transform.forward.x;
-            }
+        
 
 
             //  transform.Translate(gameObject.transform.forward*Time.deltaTime* velPersonaje, Space.World);
