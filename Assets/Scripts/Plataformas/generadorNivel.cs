@@ -13,10 +13,11 @@ public class generadorNivel : MonoBehaviour
     private datosPiezas piezaAnt;
 
     public Vector3 spawnOrigen;
-    private Vector3 spawnPos;
+    public static Vector3 spawnPos;
+    public static Vector3 spawnInicialAux;
+
     public int piezasIniciales=10;
 
-    float alturaJuego=0;
     float alturaSpawnPlat = 0;
     float des = 0;
 
@@ -38,6 +39,7 @@ public class generadorNivel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        spawnInicialAux = new Vector3(spawnPos.x, spawnPos.y, spawnPos.z);
         piezaAnt = primeraPieza;
         for (int i = 0; i < piezasIniciales; i++) {
             elegeirYspawnPieza();
