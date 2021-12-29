@@ -11,7 +11,7 @@ public class datosPiezas : MonoBehaviour
     este
     }
 
-    public Vector2 tamano = new Vector2(10f,10f);
+    public Vector2 tamano = new Vector2(9.89f, 8.05f);
     public GameObject[] prefabsLvl;
     public Direcciones entrada;
     public Direcciones salida;

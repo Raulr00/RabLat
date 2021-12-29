@@ -43,8 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f36e313c605628b4bbc6420c23138d13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tamano: {x: 10, y: 10}
+  tamano: {x: 9.89, y: 7.19}
   prefabsLvl:
-  - {fileID: 8678753035267519600, guid: 1a64e02da4c63e346a05d627765e1a28, type: 3}
+  - {fileID: 1221332926392711506, guid: 63cf5649edb00374182f3710548b1f85, type: 3}
   entrada: 0
   salida: 1

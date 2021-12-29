@@ -8,12 +8,13 @@ public class camera : MonoBehaviour
     public Transform jug;
     private void Start()
     {
-        transform.LookAt(jug, Vector3.up);
+        //transform.LookAt(jug, Vector3.up);
     }
 
     void Update()
     {
-        transform.position = jug.position + posCam;
-      
+       
+        transform.position = jug.position+posCam;
+
     }
 }

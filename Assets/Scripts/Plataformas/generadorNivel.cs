@@ -90,6 +90,7 @@ public class generadorNivel : MonoBehaviour
 
         datosPiezas.Direcciones sigPoscionesEntrada = datosPiezas.Direcciones.norte;
 
+        Debug.Log("Tamaño en y " + piezaAnt.tamano.y);
         switch (piezaAnt.salida) {
             case datosPiezas.Direcciones.norte:
                 sigPoscionesEntrada = datosPiezas.Direcciones.sur;
@@ -98,7 +99,9 @@ public class generadorNivel : MonoBehaviour
 
             case datosPiezas.Direcciones.este:
                 sigPoscionesEntrada = datosPiezas.Direcciones.oeste;
-                spawnPos = spawnPos + new Vector3(piezaAnt.tamano.x, 0, 0);
+                //spawnPos = spawnPos + new Vector3(piezaAnt.tamano.x, 0, 0);
+                spawnPos = spawnPos + new Vector3(piezaAnt.tamano.y, 0, 0);
+
 
                 break;
             case datosPiezas.Direcciones.sur:
@@ -110,7 +113,9 @@ public class generadorNivel : MonoBehaviour
 
             case datosPiezas.Direcciones.oeste:
                 sigPoscionesEntrada = datosPiezas.Direcciones.este;
-                spawnPos = spawnPos + new Vector3(-piezaAnt.tamano.x, 0, 0);
+               // spawnPos = spawnPos + new Vector3(-piezaAnt.tamano.x, 0, 0);
+                spawnPos = spawnPos + new Vector3(-piezaAnt.tamano.y, 0, 0);
+
 
                 break;
         }
