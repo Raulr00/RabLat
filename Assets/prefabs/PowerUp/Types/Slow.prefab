@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 760423724348134841}
   - component: {fileID: 760423724348134822}
   - component: {fileID: -4791796753389407542}
+  - component: {fileID: 6171561166314933532}
   m_Layer: 0
   m_Name: Slow
   m_TagString: Untagged
@@ -60,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c785b0761c32d88479ca959c8df73507, type: 2}
+  - {fileID: 2100000, guid: 812eb0bb31778ed43989064da39942a9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -95,3 +96,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: Slow
+  slow: 5
+--- !u!65 &6171561166314933532
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760423724348134820}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

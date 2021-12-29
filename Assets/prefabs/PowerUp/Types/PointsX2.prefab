@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 760423724348134841}
   - component: {fileID: 760423724348134822}
   - component: {fileID: -1245709959295226045}
+  - component: {fileID: 9102391752757893489}
   m_Layer: 0
   m_Name: PointsX2
   m_TagString: Untagged
@@ -60,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 952d5d4da5e7084409f615c74e366881, type: 2}
+  - {fileID: 2100000, guid: 23866a44765578446935234e0210af7e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -95,3 +96,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: PointsX2
+--- !u!65 &9102391752757893489
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760423724348134820}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

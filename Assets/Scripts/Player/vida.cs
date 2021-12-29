@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using coins;
+using PowerUps.Types;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,11 +15,18 @@ public class vida : MonoBehaviour
     private void OnEnable()
     {
         monedas.monedaRecodiga += sumarVida;
+        FullHP.fullHpEvent += HandleFullHP;
     }
 
     private void OnDisable()
     {
         monedas.monedaRecodiga -= sumarVida;
+        FullHP.fullHpEvent -= HandleFullHP;
+    }
+
+    private void HandleFullHP()
+    {
+        tiempoRestante = tiempoVivoMax;
     }
 
     // Start is called before the first frame update
