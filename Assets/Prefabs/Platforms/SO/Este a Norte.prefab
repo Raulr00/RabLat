@@ -43,10 +43,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f36e313c605628b4bbc6420c23138d13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tamano: {x: 10, y: 10}
+  tamano: {x: 9.89, y: 7.19}
   prefabsLvl:
-  - {fileID: 6593203710566597459, guid: deb240a1d60eff945b5e0555854f5f27, type: 3}
-  - {fileID: 965081506925778549, guid: 8686f81188b43e64c9cfaa89d7c76fa8, type: 3}
-  - {fileID: 8449189458561294028, guid: b16ca0776b1e4c84bb379138dae40135, type: 3}
+  - {fileID: 1495251038245022830, guid: 08697222caf324649bc656fd7d8ca8c1, type: 3}
+  - {fileID: 509048961103806542, guid: 3d40d0421de36074bbf17206792abe66, type: 3}
+  - {fileID: 7803673245433082198, guid: 243f9145cef4946439f2adbb2813af43, type: 3}
   entrada: 3
   salida: 2

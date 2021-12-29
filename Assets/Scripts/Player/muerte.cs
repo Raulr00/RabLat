@@ -5,20 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class muerte : MonoBehaviour
 {
-    public GameObject jugador;
-    public GameObject pantallaResultados;
-
-    private void Update()
+     
+    
+    private void OnCollisionEnter(Collision collision)
     {
-      //  Debug.Log(gameObject.name + " " + generadorNivel.spawnPos + " " + jugador.transform.position.y);
-
-        if (jugador.transform.position.y < generadorNivel.spawnPos.y - 5)
-        {
-            generadorNivel.spawnPos = new Vector3(generadorNivel.spawnInicialAux.x, generadorNivel.spawnInicialAux.y, generadorNivel.spawnInicialAux.z);//Imp 
-           // pantallaResultados.SetActive(true);
-            //Scene escena = SceneManager.GetActiveScene();
+      
+          if (collision.gameObject.tag.Equals("muerte")) {
             SceneManager.LoadScene("resultados");
         }
+
+            
+          }
     }
 
-}
+
+

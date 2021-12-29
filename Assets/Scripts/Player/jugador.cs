@@ -31,7 +31,7 @@ namespace Player
         {
             desplazamiento = new Vector3(0, 0, 0.01f);
             StartCoroutine(aumentarVelcidad());
-            Debug.Log(transform.forward);
+         //   Debug.Log(transform.forward);
         }
         //Se llama cuando se le da play
         void empezar() {
@@ -57,6 +57,7 @@ namespace Player
         }
 
         // Update is called once per frame
+
         void Update()
         {
           //  Debug.Log("anim idle");
@@ -135,8 +136,15 @@ namespace Player
             {
                 direccion = new Vector3(gameObject.transform.forward.x, gameObject.transform.forward.y,
                     gameObject.transform.forward.z - (dir.z - offsetZ));
-                transform.Translate(direccion * Time.deltaTime * velPersonaje, Space.World);
+                //  transform.Translate(direccion * Time.deltaTime /* velPersonaje*/, Space.World);
                 //transform.Translate(gameObject.transform.forward * Time.deltaTime * velPersonaje, Space.World);
+
+                Debug.Log(direccion * velPersonaje * Time.deltaTime);
+                // transform.position += direccion * velPersonaje * Time.deltaTime;
+                GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + direccion * velPersonaje * Time.deltaTime);
+
+                // GetComponent<Rigidbody>().MovePosition(transform.position + direccion * velPersonaje * Time.deltaTime);
+
             }
             else if (moves == 0)
             {
@@ -145,9 +153,16 @@ namespace Player
 
                 direccion = new Vector3(gameObject.transform.forward.x + dir.x, gameObject.transform.forward.y,
                     gameObject.transform.forward.z);
-                transform.Translate(direccion * Time.deltaTime * velPersonaje, Space.World);
+                Debug.Log("fnwiefl");
+                // transform.Translate(direccion * Time.deltaTime /*velPersonaje*/, Space.World);
+                //transform.position += direccion * velPersonaje * Time.deltaTime;
+               GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position+ direccion * velPersonaje * Time.deltaTime);
+                // int i = (int) transform.forward.x;
 
-                int i = (int) transform.forward.x;
+                
+
+                //  transform.position += direccion  * Time.deltaTime*2f;
+              //  GetComponent<Rigidbody>().MovePosition(transform.position + direccion * velPersonaje * Time.deltaTime);
             }
             else if (moves == 2)
             {
@@ -155,7 +170,11 @@ namespace Player
 
                 direccion = new Vector3(gameObject.transform.forward.x + dir.x, gameObject.transform.forward.y,
                     gameObject.transform.forward.z) ;
-                transform.Translate(direccion * Time.deltaTime * velPersonaje, Space.World);
+                //  transform.Translate(direccion * Time.deltaTime /*velPersonaje*/, Space.World);
+
+                GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + direccion * velPersonaje * Time.deltaTime);
+
+
                 // transform.Translate(gameObject.transform.forward * Time.deltaTime * velPersonaje, Space.World);
                 //  int i = (int)transform.forward.x;
             }
@@ -166,10 +185,11 @@ namespace Player
                 direccion = new Vector3(gameObject.transform.forward.x, gameObject.transform.forward.y,
                 gameObject.transform.forward.z - (dir.z - offsetZ));
 
+                GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + direccion * velPersonaje * Time.deltaTime);
 
-                transform.Translate(direccion * Time.deltaTime * velPersonaje, Space.World);
+                //  transform.Translate(direccion * Time.deltaTime /*velPersonaje*/, Space.World);
             }
-        
+
 
 
             //  transform.Translate(gameObject.transform.forward*Time.deltaTime* velPersonaje, Space.World);
