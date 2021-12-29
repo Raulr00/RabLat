@@ -313,7 +313,7 @@ GameObject:
   - component: {fileID: 7079287944021608072}
   m_Layer: 8
   m_Name: Rampa
-  m_TagString: Untagged
+  m_TagString: rampa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -347,4 +347,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6196cca6e7c698d45a953f0765313c8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dificultadPieza: 3
+  dificultadPieza: 1

@@ -72,9 +72,9 @@ public class generadorNivel : MonoBehaviour
         {
             Debug.Log(objeto.name);
             alturaSpawnPlat = 1.7f;
-            objeto.transform.position = new Vector3(objeto.transform.position.x,   objeto.transform.position.y+alturaSpawnPlat, objeto.transform.position.z);
+            objeto.transform.position = new Vector3(objeto.transform.position.x,   objeto.transform.position.y, objeto.transform.position.z);
             des = des + 1;//ESTO ES LA ALTURA DE LAS PLATAFORMAS
-            spawnPos = new Vector3(spawnPos.x, spawnPos.y + 2.6f, spawnPos.z);
+            spawnPos = new Vector3(spawnPos.x, spawnPos.y+1.94f, spawnPos.z);
         }
         objeto.transform.SetParent(padreMapa.transform);
         piezaAnt = piezaSpawn;
@@ -90,7 +90,7 @@ public class generadorNivel : MonoBehaviour
 
         datosPiezas.Direcciones sigPoscionesEntrada = datosPiezas.Direcciones.norte;
 
-        Debug.Log("Tamaño en y " + piezaAnt.tamano.y);
+       // Debug.Log("Tamaño en y " + piezaAnt.tamano.y);
         switch (piezaAnt.salida) {
             case datosPiezas.Direcciones.norte:
                 sigPoscionesEntrada = datosPiezas.Direcciones.sur;
