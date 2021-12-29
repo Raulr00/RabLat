@@ -25,7 +25,7 @@ namespace Player
         float offsetZ = 0;
 
 
-        bool moverse = false;//Esto sera true cuando le demos a play, sirve para la animacion idle de la rata al empezar
+    
 
         void Start()
         {
@@ -35,7 +35,7 @@ namespace Player
         }
         //Se llama cuando se le da play
         void empezar() {
-            moverse = true;
+            GameManager.moverse = true;
         }
 
         private void OnEnable()
@@ -59,8 +59,8 @@ namespace Player
         // Update is called once per frame
         void Update()
         {
-            Debug.Log("anim idle");
-            if (!moverse)
+          //  Debug.Log("anim idle");
+            if (!GameManager.moverse)
                 return;
 
 

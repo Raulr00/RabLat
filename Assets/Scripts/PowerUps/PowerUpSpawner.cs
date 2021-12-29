@@ -15,8 +15,8 @@ public class PowerUpSpawner : MonoBehaviour
     private void Awake()
     {
         int rand = _random.Next(101);
-        Debug.Log(rand + "\n"+
-                  (rand > spawnRate));
+     /*   Debug.Log(rand + "\n"+
+                  (rand > spawnRate));*/
         if (rand > spawnRate)
             return;
         
