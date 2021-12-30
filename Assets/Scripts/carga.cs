@@ -26,7 +26,7 @@ public class carga : MonoBehaviour
              progreso += 0.1f;
 
             barracarga.value = progreso;
-            yield return 0.2f;
+            yield return 20f;
         }
         AsyncOperation op = SceneManager.LoadSceneAsync(1);
     }

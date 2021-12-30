@@ -1,3 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+public class menuPrincipal : MonoBehaviour
+{
+    public delegate void menu();
+    public static event menu empezarPartida;
+
+    public GameObject canvasMenu;
+
+
+    //Esto se modifica desde el script de resultados
+
+
 
     private void Start()
     {

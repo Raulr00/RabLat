@@ -27,10 +27,6 @@ namespace Player
         float offsetZ = 0;
 
 
-        private void OnDestroy()
-        {
-            Debug.Log("destruido");
-        }
 
 
         void Awake()
