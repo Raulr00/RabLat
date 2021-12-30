@@ -11,6 +11,8 @@ public class muerte : MonoBehaviour
     {
       
           if (collision.gameObject.tag.Equals("muerte")) {
+
+            generadorNivel.spawnPos = generadorNivel.spawnInicialAux;
             SceneManager.LoadScene("resultados");
         }
 
