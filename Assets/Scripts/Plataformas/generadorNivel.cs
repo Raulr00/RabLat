@@ -70,7 +70,7 @@ public class generadorNivel : MonoBehaviour
        GameObject objeto= Instantiate(prefab, spawnPos + spawnOrigen, prefab.transform.rotation);
         if (prefab.tag.Equals("rampa"))
         {
-            Debug.Log(objeto.name);
+           // Debug.Log(objeto.name);
             alturaSpawnPlat = 1.7f;
             objeto.transform.position = new Vector3(objeto.transform.position.x,   objeto.transform.position.y, objeto.transform.position.z);
             des = des + 1;//ESTO ES LA ALTURA DE LAS PLATAFORMAS

@@ -10,11 +10,11 @@ public class menuPrincipal : MonoBehaviour
     public GameObject canvasMenu;
 
 
- //Esto se modifica desde el script de resultados
+    //Esto se modifica desde el script de resultados
 
-    
 
-    private void Awake()
+
+    private void Start()
     {
         //Time.timeScale = 0;
 
@@ -29,7 +29,7 @@ public class menuPrincipal : MonoBehaviour
         {
             Debug.Log(" Mostrat menu");
         }
-        
+
     }
 
     public void Jugar()
@@ -40,10 +40,15 @@ public class menuPrincipal : MonoBehaviour
 
     }
 
+    public menu getempezar()
+    {
 
-   
+        return empezarPartida;
+    }
 
-    public void Salir() {
+
+    public void Salir()
+    {
         Application.Quit();
     }
 }

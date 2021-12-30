@@ -2,24 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 public class carga : MonoBehaviour
 {
 
-    private void Awake()
-    {
-        SceneManager.LoadScene("Tutorial");
 
-    }
-    // Start is called before the first frame update
-    void Start()
+    public Slider barracarga;
+    float progreso = 0;
+    private void Start()
     {
-        
+        //SceneManager.LoadScene("Tutorial");
+        cargarNivel();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void cargarNivel() {
+        StartCoroutine(cargarAsync());
+    }
+    IEnumerator cargarAsync() {
+       
+
+        while (progreso<=1) {
+
+             progreso += 0.1f;
+
+            barracarga.value = progreso;
+            yield return 0.2f;
+        }
+        AsyncOperation op = SceneManager.LoadSceneAsync(1);
     }
 }
