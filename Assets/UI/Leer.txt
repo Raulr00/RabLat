@@ -1,0 +1,2 @@
+Los titulos tienen la fuente super_mario_265
+El resto de textos tienen la ffuente candy_beans
