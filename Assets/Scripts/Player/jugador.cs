@@ -20,6 +20,7 @@ namespace Player
 
         int moves = 0;
         public float velPersonaje = 10;
+        public float minVel = 10;
         public int[] direccion = {0, 1, 2, 3};
 
 
@@ -75,6 +76,10 @@ namespace Player
         private void HanldeSlowPwrUp(float slow)
         {
             velPersonaje -= slow;
+            if (velPersonaje < minVel)
+            {
+                velPersonaje = minVel;
+            }
         }
 
         // Update is called once per frame
