@@ -96,6 +96,50 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0109137, y: 0.9918395, z: 0.22870918}
   m_Center: {x: 3.250154e-15, y: 2.4376151e-15, z: 0.11435483}
+--- !u!1 &1182587426789065140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7985183551559742049}
+  - component: {fileID: 6491763088157072501}
+  m_Layer: 8
+  m_Name: muerte1 (2)
+  m_TagString: muerte
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7985183551559742049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182587426789065140}
+  m_LocalRotation: {x: -0.50000006, y: 0.50000006, z: -0.49999994, w: 0.4999999}
+  m_LocalPosition: {x: 0.07800002, y: -0.559, z: 0.146}
+  m_LocalScale: {x: 0.97339344, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7424157408528853996}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6491763088157072501
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182587426789065140}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.24639909, y: 0.114402115, z: 1.0039544}
+  m_Center: {x: -0.31760845, y: 0.4387156, z: 0.014506774}
 --- !u!1 &1417956407536150134
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,6 +236,50 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0109138, y: 0.99184006, z: 0.2287096}
   m_Center: {x: 0.00000022441382, y: 0.00000002449075, z: 0.11435454}
+--- !u!1 &1888371098615569361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1215526515688211691}
+  - component: {fileID: 4223896492739610922}
+  m_Layer: 8
+  m_Name: muerte1
+  m_TagString: muerte
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1215526515688211691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888371098615569361}
+  m_LocalRotation: {x: -0.50000006, y: 0.50000006, z: -0.49999994, w: 0.4999999}
+  m_LocalPosition: {x: -0.41200006, y: 0.094944835, z: 0.14600001}
+  m_LocalScale: {x: 0.97339344, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7424157408528853996}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4223896492739610922
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888371098615569361}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0824631, y: 0.1144021, z: 0.21097691}
+  m_Center: {x: -0.03577439, y: 0.4387178, z: 0.10548828}
 --- !u!1 &2883906056937176419
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,6 +388,7 @@ GameObject:
   - component: {fileID: 4523230528501948184}
   - component: {fileID: 4150737989085732913}
   - component: {fileID: 4150737989085732912}
+  - component: {fileID: 8821741445396643731}
   m_Layer: 8
   m_Name: Box038
   m_TagString: Untagged
@@ -383,8 +472,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.7581853, y: 0.7438797, z: 0.22870925}
-  m_Center: {x: 0.12636423, y: 0.12397994, z: 0.114354625}
+  m_Size: {x: 0.25572342, y: 0.7438797, z: 0.22870925}
+  m_Center: {x: -0.1248667, y: 0.12397995, z: 0.114354625}
 --- !u!114 &4150737989085732912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -397,6 +486,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1937941abb167be449eaddcad228aa46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8821741445396643731
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4150737989085732927}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5052606, y: 0.24398251, z: 0.22870925}
+  m_Center: {x: 0.25008586, y: -0.12596883, z: 0.114354625}
+--- !u!1 &4803589269986873119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6701157757494412245}
+  - component: {fileID: 7736181334071222124}
+  m_Layer: 8
+  m_Name: muerte1 (1)
+  m_TagString: muerte
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6701157757494412245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4803589269986873119}
+  m_LocalRotation: {x: -0.50000006, y: 0.50000006, z: -0.49999994, w: 0.4999999}
+  m_LocalPosition: {x: 0.07800002, y: 0.094944835, z: 0.146}
+  m_LocalScale: {x: 0.97339344, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7424157408528853996}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7736181334071222124
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4803589269986873119}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5782418, y: 0.114402115, z: 0.51648414}
+  m_Center: {x: -0.2878861, y: 0.4387165, z: 0.2582417}
 --- !u!1 &7803673245433082198
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,6 +576,9 @@ Transform:
   - {fileID: 9004268453938187893}
   - {fileID: 6856096898004449299}
   - {fileID: 3760995020940667937}
+  - {fileID: 1215526515688211691}
+  - {fileID: 6701157757494412245}
+  - {fileID: 7985183551559742049}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: -90, z: 0}
