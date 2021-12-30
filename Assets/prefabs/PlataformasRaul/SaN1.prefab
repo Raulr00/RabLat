@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3110677693428506694}
   - component: {fileID: 355992414937059687}
   - component: {fileID: 3665586966266245377}
+  - component: {fileID: 4399587832102046319}
   m_Layer: 8
   m_Name: Box064
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,6 +93,19 @@ BoxCollider:
   m_GameObject: {fileID: 3665586966266245406}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0109137, y: 0.9918395, z: 0.22870918}
+  m_Center: {x: 3.250154e-15, y: 2.4376151e-15, z: 0.11435483}
+--- !u!65 &4399587832102046319
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3665586966266245406}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.0109137, y: 0.9918395, z: 0.22870918}
@@ -186,9 +200,10 @@ GameObject:
   - component: {fileID: 4583925261937438853}
   - component: {fileID: 6100976483550494171}
   - component: {fileID: 7685999040272479785}
+  - component: {fileID: 6406207763003360609}
   m_Layer: 8
   m_Name: Box065
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -266,6 +281,19 @@ BoxCollider:
   m_GameObject: {fileID: 7685999040272479782}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0109143, y: 0.99184006, z: 0.22870955}
+  m_Center: {x: 0.00000001490116, y: -0.000000027264274, z: 0.114354655}
+--- !u!65 &6406207763003360609
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7685999040272479782}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.0109143, y: 0.99184006, z: 0.22870955}

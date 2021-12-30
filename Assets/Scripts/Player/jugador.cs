@@ -140,7 +140,7 @@ namespace Player
             }
             else if (Input.GetKeyDown(KeyCode.S) || swipeMovil.swipeDown)
             {
-                gizmo.transform.localScale = new Vector3(1, 0.6f, 1);
+                gizmo.transform.localScale = new Vector3(1, 0.2f, 1);
                 animator.SetTrigger("Slide");
                 StartCoroutine(agacharse());
             }
@@ -160,7 +160,7 @@ namespace Player
 
             Vector3 direccion = Vector3.zero;
 
-            // Debug.Log((int)transform.forward.x == 1);
+          // Debug.Log(transform.forward);
 
 
             if (moves == 1)
@@ -168,7 +168,7 @@ namespace Player
                 direccion = new Vector3(gameObject.transform.forward.x, gameObject.transform.forward.y,
                     gameObject.transform.forward.z - (dir.z - offsetZ));
 
-                Debug.Log(dir.z+" "+ offsetZ);
+               // Debug.Log(dir.z+" "+ offsetZ);
                 //  transform.Translate(direccion * Time.deltaTime /* velPersonaje*/, Space.World);
                 //transform.Translate(gameObject.transform.forward * Time.deltaTime * velPersonaje, Space.World);
 
@@ -231,13 +231,9 @@ namespace Player
 
         IEnumerator agacharse()
         {
-            while (gizmo.transform.localScale.y == 0.6f)
-            {
-                gizmo.transform.localScale = new Vector3(1, gizmo.transform.localScale.y - 0.1f, 1);
-                yield return new WaitForSeconds(0.1f);
-            }
+            
 
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
             gizmo.transform.localScale = new Vector3(1, 1, 1);
         }
 

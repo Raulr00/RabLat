@@ -190,9 +190,10 @@ GameObject:
   - component: {fileID: 2901747605361279760}
   - component: {fileID: 1451521782771398091}
   - component: {fileID: 3136025704313433100}
+  - component: {fileID: 6617996446874583927}
   m_Layer: 8
   m_Name: Box087
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -274,6 +275,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0109135, y: 0.99183965, z: 0.22870928}
   m_Center: {x: 0, y: 0, z: 0.11435458}
+--- !u!65 &6617996446874583927
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3136025704313433103}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0109135, y: 0.99183965, z: 0.22870928}
+  m_Center: {x: 0, y: 0, z: 0.11435458}
 --- !u!1 &4853101937560361786
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,9 +300,10 @@ GameObject:
   - component: {fileID: 6678582769715354131}
   - component: {fileID: 5929530195596397702}
   - component: {fileID: 4853101937560361787}
+  - component: {fileID: 888166372493188997}
   m_Layer: 8
   m_Name: Box088
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -366,6 +381,19 @@ BoxCollider:
   m_GameObject: {fileID: 4853101937560361786}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0109143, y: 0.99184006, z: 0.22870955}
+  m_Center: {x: 0.00000001490116, y: -0.000000027264274, z: 0.114354655}
+--- !u!65 &888166372493188997
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4853101937560361786}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.0109143, y: 0.99184006, z: 0.22870955}
