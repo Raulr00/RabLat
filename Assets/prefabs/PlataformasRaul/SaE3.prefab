@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &536946455640240383
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4282920200160204426}
+  - component: {fileID: 8098433376246541380}
+  m_Layer: 8
+  m_Name: muerte1
+  m_TagString: muerte
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4282920200160204426
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536946455640240383}
+  m_LocalRotation: {x: -0.50000006, y: 0.50000006, z: -0.49999994, w: 0.4999999}
+  m_LocalPosition: {x: -0.41200006, y: 0.094944835, z: 0.14600001}
+  m_LocalScale: {x: 0.97339344, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4873601981719473553}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8098433376246541380
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536946455640240383}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5068207, y: 0.114402115, z: 0.49183065}
+  m_Center: {x: -0.25143284, y: 0.43871704, z: 0.223631}
 --- !u!1 &4844028329589160377
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,6 +173,9 @@ Transform:
   - {fileID: 8545516502677650922}
   - {fileID: 5653757426983418386}
   - {fileID: 2674086479441513727}
+  - {fileID: 4282920200160204426}
+  - {fileID: 8561759382659784153}
+  - {fileID: 336595593281601855}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: -90, z: 0}
@@ -145,6 +192,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dificultadPieza: 2
+--- !u!1 &5806571316803328455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8561759382659784153}
+  - component: {fileID: 2850250957392122867}
+  m_Layer: 8
+  m_Name: muerte1 (1)
+  m_TagString: muerte
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8561759382659784153
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5806571316803328455}
+  m_LocalRotation: {x: -0.50000006, y: 0.50000006, z: -0.49999994, w: 0.4999999}
+  m_LocalPosition: {x: 0.07800002, y: -0.17200013, z: 0.14600001}
+  m_LocalScale: {x: 0.97339344, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4873601981719473553}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2850250957392122867
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5806571316803328455}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.016998, y: 0.114402115, z: 0.23255719}
+  m_Center: {x: -0.30942476, y: 0.43871492, z: 0.3644009}
 --- !u!1 &6051527362704639947
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,6 +344,7 @@ GameObject:
   - component: {fileID: 7868760591335819932}
   - component: {fileID: 6657202521917019402}
   - component: {fileID: 6657202521917019403}
+  - component: {fileID: 1169414518250649026}
   m_Layer: 8
   m_Name: Box056
   m_TagString: Untagged
@@ -336,8 +428,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.7581853, y: 0.7438797, z: 0.22870925}
-  m_Center: {x: 0.12636422, y: 0.1239797, z: 0.114354655}
+  m_Size: {x: 0.75818527, y: 0.24828233, z: 0.22870925}
+  m_Center: {x: 0.12636423, y: -0.123818405, z: 0.11435466}
 --- !u!114 &6657202521917019403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,6 +442,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1937941abb167be449eaddcad228aa46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1169414518250649026
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6657202521917019400}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25412375, y: 0.52677965, z: 0.22870925}
+  m_Center: {x: -0.12566625, y: 0.23521043, z: 0.114354655}
+--- !u!1 &7469998481674539516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 336595593281601855}
+  - component: {fileID: 1384870016734760091}
+  m_Layer: 8
+  m_Name: muerte1 (2)
+  m_TagString: muerte
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &336595593281601855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7469998481674539516}
+  m_LocalRotation: {x: -0.50000006, y: 0.50000006, z: -0.49999994, w: 0.4999999}
+  m_LocalPosition: {x: -0.41200006, y: 0.094944835, z: 0.14600001}
+  m_LocalScale: {x: 0.97339344, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4873601981719473553}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1384870016734760091
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7469998481674539516}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2405327, y: 0.114402115, z: 0.7808493}
+  m_Center: {x: 0.36284474, y: 0.4387154, z: 0.3681403}
 --- !u!1 &7470433564854910068
 GameObject:
   m_ObjectHideFlags: 0

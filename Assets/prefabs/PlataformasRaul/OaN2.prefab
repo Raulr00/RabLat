@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &428837109095872733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4461182101844365817}
+  - component: {fileID: 2549323933488659709}
+  m_Layer: 8
+  m_Name: muerte1 (2)
+  m_TagString: muerte
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4461182101844365817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428837109095872733}
+  m_LocalRotation: {x: -0.50000006, y: 0.5000001, z: -0.5, w: 0.49999997}
+  m_LocalPosition: {x: 0.078, y: -0.409, z: 0.146}
+  m_LocalScale: {x: 0.973393, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5207214952644264874}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2549323933488659709
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428837109095872733}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.51369274, y: 0.1144021, z: 0.5283703}
+  m_Center: {x: -0.25829795, y: 0.43871433, z: 0.25230017}
 --- !u!1 &1431085269019264031
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,6 +140,50 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0109143, y: 0.99184006, z: 0.22870955}
   m_Center: {x: 0.00000001490116, y: -0.000000027264274, z: 0.114354655}
+--- !u!1 &2094075488416221739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6437029480687509728}
+  - component: {fileID: 6179856859085765651}
+  m_Layer: 8
+  m_Name: muerte1 (1)
+  m_TagString: muerte
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6437029480687509728
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094075488416221739}
+  m_LocalRotation: {x: -0.50000006, y: 0.5000001, z: -0.5, w: 0.49999997}
+  m_LocalPosition: {x: 0.078, y: 0.09494474, z: 0.146}
+  m_LocalScale: {x: 0.973393, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5207214952644264874}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6179856859085765651
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094075488416221739}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.24876139, y: 0.1144021, z: 0.7813486}
+  m_Center: {x: -0.39076298, y: 0.4387163, z: 0.12581035}
 --- !u!1 &3567726768121503243
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,6 +312,9 @@ Transform:
   - {fileID: 8739656750747656946}
   - {fileID: 5617456077134898163}
   - {fileID: 9159562265382066888}
+  - {fileID: 7241241895049965789}
+  - {fileID: 6437029480687509728}
+  - {fileID: 4461182101844365817}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: -90, z: 0}
@@ -349,6 +440,7 @@ GameObject:
   - component: {fileID: 5003191442158050853}
   - component: {fileID: 6717712201557551327}
   - component: {fileID: 6717712201557551320}
+  - component: {fileID: 5482268063212169241}
   m_Layer: 8
   m_Name: Box047
   m_TagString: Untagged
@@ -432,8 +524,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.7581853, y: 0.7438797, z: 0.22870925}
-  m_Center: {x: 0.12636422, y: 0.12398018, z: 0.114354596}
+  m_Size: {x: 0.7581853, y: 0.24874863, z: 0.22870925}
+  m_Center: {x: 0.1263642, y: -0.12358532, z: 0.114354596}
 --- !u!114 &6717712201557551320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,6 +538,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1937941abb167be449eaddcad228aa46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5482268063212169241
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6717712201557551321}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25344458, y: 0.5290996, z: 0.22870925}
+  m_Center: {x: -0.12600617, y: 0.23200102, z: 0.114354596}
+--- !u!1 &6843583559895059529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7241241895049965789}
+  - component: {fileID: 6024466541529835416}
+  m_Layer: 8
+  m_Name: muerte1
+  m_TagString: muerte
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7241241895049965789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6843583559895059529}
+  m_LocalRotation: {x: -0.50000006, y: 0.5000001, z: -0.5, w: 0.49999997}
+  m_LocalPosition: {x: -0.412, y: 0.09494474, z: 0.146}
+  m_LocalScale: {x: 0.973393, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5207214952644264874}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6024466541529835416
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6843583559895059529}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0102992, y: 0.1144021, z: 0.21097694}
+  m_Center: {x: 0.00030768316, y: 0.4387178, z: 0.1054883}
 --- !u!1001 &2296328771135142241
 PrefabInstance:
   m_ObjectHideFlags: 0

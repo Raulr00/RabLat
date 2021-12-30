@@ -192,6 +192,50 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0109143, y: 0.99184006, z: 0.22870955}
   m_Center: {x: 0.00000001490116, y: -0.000000027264274, z: 0.114354655}
+--- !u!1 &4797284719405542409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 289472116566734301}
+  - component: {fileID: 6995639396657105720}
+  m_Layer: 8
+  m_Name: muerte1
+  m_TagString: muerte
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &289472116566734301
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4797284719405542409}
+  m_LocalRotation: {x: -0.50000006, y: 0.5000001, z: -0.5, w: 0.49999997}
+  m_LocalPosition: {x: -0.412, y: 0.09494474, z: 0.146}
+  m_LocalScale: {x: 0.973393, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8298738502682889222}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6995639396657105720
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4797284719405542409}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0102992, y: 0.1144021, z: 0.21097694}
+  m_Center: {x: 0.00030768316, y: 0.4387178, z: 0.1054883}
 --- !u!1 &6114354056658141339
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,6 +249,7 @@ GameObject:
   - component: {fileID: 197184681402297138}
   - component: {fileID: 6114354056658141333}
   - component: {fileID: 6114354056658141332}
+  - component: {fileID: 6385040325922506754}
   m_Layer: 8
   m_Name: Box050
   m_TagString: Untagged
@@ -288,8 +333,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.7581853, y: 0.9918395, z: 0.22870925}
-  m_Center: {x: 0.12636422, y: 0.00000023841858, z: 0.114354596}
+  m_Size: {x: 0.7581853, y: 0.2469161, z: 0.22870925}
+  m_Center: {x: 0.1263642, y: -0.37246168, z: 0.114354596}
 --- !u!114 &6114354056658141332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,6 +347,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1937941abb167be449eaddcad228aa46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6385040325922506754
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6114354056658141339}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25135145, y: 0.759003, z: 0.22870925}
+  m_Center: {x: -0.123718634, y: 0.112304844, z: 0.11435459}
+--- !u!1 &6453793631997805615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1564831535639891000}
+  - component: {fileID: 9022895139305302503}
+  m_Layer: 8
+  m_Name: muerte1 (1)
+  m_TagString: muerte
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1564831535639891000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6453793631997805615}
+  m_LocalRotation: {x: -0.50000006, y: 0.5000001, z: -0.5, w: 0.49999997}
+  m_LocalPosition: {x: 0.078, y: -0.172, z: 0.146}
+  m_LocalScale: {x: 0.973393, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8298738502682889222}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &9022895139305302503
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6453793631997805615}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7719105, y: 0.1144021, z: 0.5060737}
+  m_Center: {x: -0.12918931, y: 0.43871516, z: 0.2634486}
 --- !u!1 &8674172711191516860
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,6 +437,8 @@ Transform:
   - {fileID: 543295831035090110}
   - {fileID: 2953381539360847765}
   - {fileID: 6869132397335672798}
+  - {fileID: 289472116566734301}
+  - {fileID: 1564831535639891000}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: -90, z: 0}

@@ -27,7 +27,11 @@ namespace Player
         float offsetZ = 0;
 
 
-    
+        private void OnDestroy()
+        {
+            Debug.Log("destruido");
+        }
+
 
         void Awake()
         {
@@ -58,6 +62,9 @@ namespace Player
         private void OnEnable()
         {
             Slow.slowEvent += HanldeSlowPwrUp;
+            //    menuPrincipal.empezarPartida += empezar;
+
+
             menuPrincipal.empezarPartida += empezar;
 
         }
@@ -98,7 +105,7 @@ namespace Player
                 }
 
                 transform.Rotate(new Vector3(0, -90, 0));
-                Debug.Log(transform.forward);
+               // Debug.Log(transform.forward);
 
                 //    camera.transform.RotateAround(gameObject.transform.position,new Vector3(0, -90, 0),-90);
                 //   transform.rotation = Quaternion.RotateTowards(transform.rotation, new Quaternion(gameObject.transform.forward.x, gameObject.transform.forward.y, gameObject.transform.forward.z, 0), 720 * Time.deltaTime);
@@ -109,11 +116,14 @@ namespace Player
             {
                 moves = (moves + 1) % 4;
                 transform.Rotate(new Vector3(0, 90, 0));
-                Debug.Log(transform.forward);
+              //  Debug.Log(transform.forward);
 
                 if (moves == 1 || moves == 3)
                 {
                     offsetZ = Input.acceleration.z;
+
+
+
                 }
 
                 // camera.transform.RotateAround(gameObject.transform.position, new Vector3(0, 90, 0), 90);
@@ -156,10 +166,12 @@ namespace Player
             {
                 direccion = new Vector3(gameObject.transform.forward.x, gameObject.transform.forward.y,
                     gameObject.transform.forward.z - (dir.z - offsetZ));
+
+                Debug.Log(dir.z+" "+ offsetZ);
                 //  transform.Translate(direccion * Time.deltaTime /* velPersonaje*/, Space.World);
                 //transform.Translate(gameObject.transform.forward * Time.deltaTime * velPersonaje, Space.World);
 
-                Debug.Log(direccion * velPersonaje * Time.deltaTime);
+                //    Debug.Log(direccion * velPersonaje * Time.deltaTime);
                 // transform.position += direccion * velPersonaje * Time.deltaTime;
                 GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + direccion * velPersonaje * Time.deltaTime);
 
@@ -173,7 +185,7 @@ namespace Player
 
                 direccion = new Vector3(gameObject.transform.forward.x + dir.x, gameObject.transform.forward.y,
                     gameObject.transform.forward.z);
-                Debug.Log("fnwiefl");
+              //  Debug.Log("fnwiefl");
                 // transform.Translate(direccion * Time.deltaTime /*velPersonaje*/, Space.World);
                 //transform.position += direccion * velPersonaje * Time.deltaTime;
                GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position+ direccion * velPersonaje * Time.deltaTime);
