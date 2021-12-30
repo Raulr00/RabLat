@@ -11,6 +11,8 @@ namespace Player
     {
         public GameObject mapa;
         public GameObject gizmo;
+        private Animator animator;
+
 
         Vector3 desplazamiento;
 
@@ -31,15 +33,30 @@ namespace Player
         }
 
 
-        void Start()
+        void Awake()
         {
+            animator = GetComponentInChildren<Animator>();
+            animator.SetBool("Run", false);
+
+            if (GameManager.moverse)
+            {
+                animator.SetBool("Run", true);
+            }
             desplazamiento = new Vector3(0, 0, 0.01f);
             StartCoroutine(aumentarVelcidad());
+            
          //   Debug.Log(transform.forward);
         }
+
+        private void OnDestroy()
+        {
+            menuPrincipal.empezarPartida -= empezar;
+        }
+
         //Se llama cuando se le da play
         void empezar() {
             GameManager.moverse = true;
+            animator.SetBool("Run", true);
         }
 
         private void OnEnable()
@@ -55,6 +72,7 @@ namespace Player
         private void OnDisable()
         {
             Slow.slowEvent -= HanldeSlowPwrUp;
+            menuPrincipal.empezarPartida -= empezar;
         }
 
         [ContextMenu("HandleSlow")]
@@ -117,10 +135,12 @@ namespace Player
             {
                 GetComponent<Rigidbody>().AddForce(Vector3.up * 200f);
                 ;
+                animator.SetTrigger("Jump");
             }
             else if (Input.GetKeyDown(KeyCode.S) || swipeMovil.swipeDown)
             {
                 gizmo.transform.localScale = new Vector3(1, 0.6f, 1);
+                animator.SetTrigger("Slide");
                 StartCoroutine(agacharse());
             }
 
