@@ -14,7 +14,7 @@ public class menuPrincipal : MonoBehaviour
 
     
 
-    private void Awake()
+    private void Start()
     {
         //Time.timeScale = 0;
 
@@ -40,8 +40,12 @@ public class menuPrincipal : MonoBehaviour
 
     }
 
+    public menu getempezar()
+    {
 
-   
+        return empezarPartida;
+    }
+
 
     public void Salir() {
         Application.Quit();
