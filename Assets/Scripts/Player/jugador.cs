@@ -18,7 +18,7 @@ namespace Player
 
         public GameObject camera;
 
-        int moves = 0;
+       public int moves = 0;
         public float velPersonaje = 10;
         public float minVel = 10;
         public int[] direccion = {0, 1, 2, 3};
@@ -52,6 +52,7 @@ namespace Player
 
         //Se llama cuando se le da play
         void empezar() {
+            Debug.Log("empezar llamado");
             GameManager.moverse = true;
             animator.SetBool("Run", true);
         }
@@ -182,7 +183,6 @@ namespace Player
             else if (moves == 0)
             {
                 //         texto.text = "FALSO";
-
 
                 direccion = new Vector3(gameObject.transform.forward.x + dir.x, gameObject.transform.forward.y,
                     gameObject.transform.forward.z);

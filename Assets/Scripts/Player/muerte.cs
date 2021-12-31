@@ -32,7 +32,6 @@ public class muerte : MonoBehaviour
                 GameManager.moverse = false;
                 GetComponent<Animator>().SetBool("Crash", true);
                 StartCoroutine(pasarEscena(5f));
-                Debug.Log("polla");
                 gameObject.GetComponent<BoxCollider>().enabled = false;
             }
             

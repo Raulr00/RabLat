@@ -39,6 +39,22 @@ public class menuPrincipal : MonoBehaviour
         empezarPartida();
 
     }
+    public void mostratMenuEnPartida(){
+        Time.timeScale = 0;//Para el tiempo del juego
+    }
+
+    public void quitarMenuEnPatida() {
+        Time.timeScale = 1.0f;//Reanuda el tiempo del juego
+    }
+
+
+    public void terminarPartida() {
+        generadorNivel.spawnPos = generadorNivel.spawnInicialAux;
+        GameManager.moverse = false;
+        GameManager.mostrarMenu = true;
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene("Tutorial");
+    }
 
     public menu getempezar()
     {
