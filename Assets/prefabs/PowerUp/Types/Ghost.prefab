@@ -60,6 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: Ghost
+  rotSpeed: 1
   duration: 10
 --- !u!1 &5909205248514594478
 GameObject:
