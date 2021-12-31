@@ -95,4 +95,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpConfig: {fileID: 11400000, guid: 17773ffa4e1b169498482626de06d96d, type: 2}
-  spawnRate: 2
+  spawnRate: 40
+  forceSpawn: 0
