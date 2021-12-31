@@ -612,10 +612,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 84.716
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ecbe926bf51b87a4ca9f33724372c34d, type: 2}
+    - target: {fileID: -3477821731311062464, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
     - target: {fileID: 919132149155446097, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
       propertyPath: m_Name
       value: ConjuntoProbetas (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1603246306389932429, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
+    - target: {fileID: 4407187375235809858, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
+    - target: {fileID: 8424073627695423409, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
 --- !u!4 &250831913014623950 stripped
@@ -686,6 +706,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1554128073262358882, guid: 4c180a71c879bcb4285adbfcdaf4e959, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
     - target: {fileID: 919132149155446097, guid: 4c180a71c879bcb4285adbfcdaf4e959, type: 3}
       propertyPath: m_Name
       value: CosoParaprobetas
@@ -760,6 +784,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.269
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
     - target: {fileID: 919132149155446097, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
       propertyPath: m_Name
       value: ProbetaBotijo (6)
@@ -920,6 +948,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 00a1801f09f2614458887924580b28ea, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
     - target: {fileID: 919132149155446097, guid: 00a1801f09f2614458887924580b28ea, type: 3}
       propertyPath: m_Name
       value: ProbetaLarga (2)
@@ -994,6 +1026,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
     - target: {fileID: 919132149155446097, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
       propertyPath: m_Name
       value: ProbetaBotijo (5)
@@ -1068,6 +1104,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.269
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 00a1801f09f2614458887924580b28ea, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
     - target: {fileID: 919132149155446097, guid: 00a1801f09f2614458887924580b28ea, type: 3}
       propertyPath: m_Name
       value: ProbetaLarga (4)
@@ -1142,10 +1182,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -94.553
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ecbe926bf51b87a4ca9f33724372c34d, type: 2}
+    - target: {fileID: -3477821731311062464, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
     - target: {fileID: 919132149155446097, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
       propertyPath: m_Name
       value: ConjuntoProbetas (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1603246306389932429, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
+    - target: {fileID: 4407187375235809858, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
+    - target: {fileID: 8424073627695423409, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
 --- !u!4 &3690266351392294318 stripped
@@ -1160,6 +1220,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 283166994418397825}
     m_Modifications:
+    - target: {fileID: 4956357165525325619, guid: 383b7041893e0274da9fb803caa618d0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
     - target: {fileID: 6089896155490462812, guid: 383b7041893e0274da9fb803caa618d0, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1278,6 +1342,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.269
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8a7a2cd172b41184792ba5f3cc93a4dd, type: 2}
     - target: {fileID: 919132149155446097, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
       propertyPath: m_Name
       value: ProbetaBotijo (8)
@@ -1414,6 +1482,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 00a1801f09f2614458887924580b28ea, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
     - target: {fileID: 919132149155446097, guid: 00a1801f09f2614458887924580b28ea, type: 3}
       propertyPath: m_Name
       value: ProbetaLarga (3)
@@ -1488,6 +1560,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
     - target: {fileID: 919132149155446097, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
       propertyPath: m_Name
       value: ProbetaBotijo (3)
@@ -1624,6 +1700,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.269
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 00a1801f09f2614458887924580b28ea, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
     - target: {fileID: 919132149155446097, guid: 00a1801f09f2614458887924580b28ea, type: 3}
       propertyPath: m_Name
       value: ProbetaLarga (5)
@@ -1698,6 +1778,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -179.269
       objectReference: {fileID: 0}
+    - target: {fileID: -1554128073262358882, guid: 4c180a71c879bcb4285adbfcdaf4e959, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
     - target: {fileID: 919132149155446097, guid: 4c180a71c879bcb4285adbfcdaf4e959, type: 3}
       propertyPath: m_Name
       value: CosoParaprobetas (1)
@@ -1716,6 +1800,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 283166994418397825}
     m_Modifications:
+    - target: {fileID: 4956357165525325619, guid: 383b7041893e0274da9fb803caa618d0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
     - target: {fileID: 6089896155490462812, guid: 383b7041893e0274da9fb803caa618d0, type: 3}
       propertyPath: m_RootOrder
       value: 18
