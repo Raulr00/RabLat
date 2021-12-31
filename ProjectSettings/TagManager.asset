@@ -7,6 +7,7 @@ TagManager:
   - rampa
   - muerte
   - pared
+  - Magnet
   layers:
   - Default
   - TransparentFX
@@ -18,9 +19,9 @@ TagManager:
   - player
   - escenario
   - probeta
-  - 
-  - 
-  - 
+  - Ghost
+  - Magnet
+  - Cheese
   - 
   - 
   - 

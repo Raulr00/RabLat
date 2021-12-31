@@ -25,14 +25,19 @@ public class generadorNivel : MonoBehaviour
 
     public int dificultadActual=1;
 
+    private int countPwrUp = 0;
+    private int pwrUpPlatforms = 10;
+
     private void OnEnable()
     {
         destruirPlat.salidaPieza += elegeirYspawnPieza;
+        PowerUpSpawner.spawnEvent += resetPwrUpCounter;
     }
 
     private void OnDisable()
     {
         destruirPlat.salidaPieza -= elegeirYspawnPieza;
+        PowerUpSpawner.spawnEvent -= resetPwrUpCounter;
     }
 
 
@@ -78,10 +83,22 @@ public class generadorNivel : MonoBehaviour
         }
         objeto.transform.SetParent(padreMapa.transform);
         piezaAnt = piezaSpawn;
+        if (objeto.GetComponentInChildren<PowerUpSpawner>() != null)
+        {
+            if (countPwrUp >= pwrUpPlatforms)
+                Debug.Log("Tiene spawner");
+            else
+                Debug.Log("No tiene spawner");
+            
+            objeto.GetComponentInChildren<PowerUpSpawner>().spawnable = (countPwrUp >= pwrUpPlatforms);
+        }
+       
+        countPwrUp++;
+    }
 
-
-        
-
+    private void resetPwrUpCounter()
+    {
+        countPwrUp = 0;
     }
 
     datosPiezas elegirSigPieza() {
@@ -90,7 +107,7 @@ public class generadorNivel : MonoBehaviour
 
         datosPiezas.Direcciones sigPoscionesEntrada = datosPiezas.Direcciones.norte;
 
-       // Debug.Log("Tamaño en y " + piezaAnt.tamano.y);
+       // Debug.Log("Tamaï¿½o en y " + piezaAnt.tamano.y);
         switch (piezaAnt.salida) {
             case datosPiezas.Direcciones.norte:
                 sigPoscionesEntrada = datosPiezas.Direcciones.sur;

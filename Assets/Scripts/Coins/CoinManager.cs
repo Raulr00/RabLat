@@ -58,7 +58,7 @@ namespace coins
         private void AddCoin()
         {
             coins += multiplier;
-            Debug.Log("Coins: " + _coins);
+            // Debug.Log("Coins: " + _coins);
         }
     }
 }

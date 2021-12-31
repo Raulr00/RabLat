@@ -27,7 +27,7 @@ namespace Player
         int aux = 0;
         float offsetZ = 0;
 
-
+        [SerializeField]public GameObject magnet;
 
 
         void Awake()
@@ -61,6 +61,7 @@ namespace Player
         {
             Slow.slowEvent += HanldeSlowPwrUp;
             //    menuPrincipal.empezarPartida += empezar;
+            Magnet.magnetEvent += HandleMagnetPwrUp;
 
 
             menuPrincipal.empezarPartida += empezar;
@@ -70,7 +71,21 @@ namespace Player
         private void OnDisable()
         {
             Slow.slowEvent -= HanldeSlowPwrUp;
+            Magnet.magnetEvent -= HandleMagnetPwrUp;
             menuPrincipal.empezarPartida -= empezar;
+        }
+
+        private void HandleMagnetPwrUp(float f)
+        {
+            if(magnet == null) return;
+            magnet.SetActive(true);
+            StartCoroutine(BackToNormal(f));
+        }
+
+        private IEnumerator BackToNormal(float secs)
+        {
+            yield return new WaitForSeconds(secs);
+            magnet.SetActive(false);
         }
 
         [ContextMenu("HandleSlow")]

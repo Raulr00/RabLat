@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: PowerUpConfig
   m_EditorClassIdentifier: 
   powerUps:
-  - {fileID: -3248168026778675483, guid: 03b2aadcacf07b342826edaf931ac628, type: 3}
-  - {fileID: -1245709959295226045, guid: 9dd51f14ac3271744b1261a7971a74ec, type: 3}
-  - {fileID: -4791796753389407542, guid: 5af47d1ea4239bb4bb11a66e4c030477, type: 3}
-  - {fileID: -2076535795088553468, guid: ea68940ae47834145b0ab88ab31f9c48, type: 3}
+  - {fileID: 3986573122306560658, guid: d40eb382443e6524eb02eaa0992df726, type: 3}
+  - {fileID: 474771359841477702, guid: f64f7dedd1e6ab44ab553e4c69a1e868, type: 3}
+  - {fileID: 5866220676838157319, guid: 4679f1a38cd00914ab32a8c44f7f83e1, type: 3}
+  - {fileID: 1452044244229987023, guid: b193a635b45b9594585e61ce103b63f7, type: 3}
+  - {fileID: 1782835276933973484, guid: 548cb583c2f1c124abecf8d618f1dada, type: 3}
   ids:
-  - Ghost
-  - PointsX2
   - Slow
+  - PointsX2
+  - Ghost
+  - FullHP
