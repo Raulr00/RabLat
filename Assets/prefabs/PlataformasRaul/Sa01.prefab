@@ -130,8 +130,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1955530010250457116, guid: be8c04a1109830c44a2d9d339ad34741, type: 3}
-  - {fileID: 3926699618008384761, guid: be8c04a1109830c44a2d9d339ad34741, type: 3}
+  - {fileID: 2100000, guid: d889b79c12311894d8adab3f5601853d, type: 2}
+  - {fileID: 2100000, guid: 1341c85c3e3668e4a819430f955c6d70, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -239,8 +239,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
-  - {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
+  - {fileID: 2100000, guid: f20780723034ff643922ae728bd45567, type: 2}
+  - {fileID: 2100000, guid: d889b79c12311894d8adab3f5601853d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -349,8 +349,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
-  - {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
+  - {fileID: 2100000, guid: f20780723034ff643922ae728bd45567, type: 2}
+  - {fileID: 2100000, guid: d889b79c12311894d8adab3f5601853d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -461,6 +461,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7255168901617812561, guid: 4c180a71c879bcb4285adbfcdaf4e959, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9b57e44934c997446aaed7127f3910b3, type: 2}
+    - target: {fileID: -7255168901617812561, guid: 4c180a71c879bcb4285adbfcdaf4e959, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8c357ebb74cdba4aa5808cb7b28aaa6, type: 2}
+    - target: {fileID: -1554128073262358882, guid: 4c180a71c879bcb4285adbfcdaf4e959, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f20780723034ff643922ae728bd45567, type: 2}
+    - target: {fileID: -877757770343475554, guid: 4c180a71c879bcb4285adbfcdaf4e959, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1341c85c3e3668e4a819430f955c6d70, type: 2}
+    - target: {fileID: -251664392905880587, guid: 4c180a71c879bcb4285adbfcdaf4e959, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8c357ebb74cdba4aa5808cb7b28aaa6, type: 2}
     - target: {fileID: 919132149155446097, guid: 4c180a71c879bcb4285adbfcdaf4e959, type: 3}
       propertyPath: m_Name
       value: CosoParaprobetas
@@ -535,6 +555,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 00a1801f09f2614458887924580b28ea, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79c3241a267fd13478a4639d58acac7e, type: 2}
     - target: {fileID: 919132149155446097, guid: 00a1801f09f2614458887924580b28ea, type: 3}
       propertyPath: m_Name
       value: ProbetaLarga (3)
@@ -557,6 +581,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EstanteriaEstrecha (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2739138395551587395, guid: 9498bd4b1a3bd274e8a0c6b5cc0b2da2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9b57e44934c997446aaed7127f3910b3, type: 2}
     - target: {fileID: 3050997279716101326, guid: 9498bd4b1a3bd274e8a0c6b5cc0b2da2, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -601,6 +629,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4223495565392684519, guid: 9498bd4b1a3bd274e8a0c6b5cc0b2da2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aa6772d77d31e714ab77f4cd2f236885, type: 2}
+    - target: {fileID: 6152563459644528516, guid: 9498bd4b1a3bd274e8a0c6b5cc0b2da2, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 037a1d425884c4f4585b5c5232e08f08, type: 2}
+    - target: {fileID: 7340573074924255251, guid: 9498bd4b1a3bd274e8a0c6b5cc0b2da2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9b57e44934c997446aaed7127f3910b3, type: 2}
+    - target: {fileID: 7481560362831227905, guid: 9498bd4b1a3bd274e8a0c6b5cc0b2da2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aa6772d77d31e714ab77f4cd2f236885, type: 2}
+    - target: {fileID: 8154970862212036881, guid: 9498bd4b1a3bd274e8a0c6b5cc0b2da2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1341c85c3e3668e4a819430f955c6d70, type: 2}
+    - target: {fileID: 8154970862212036881, guid: 9498bd4b1a3bd274e8a0c6b5cc0b2da2, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 037a1d425884c4f4585b5c5232e08f08, type: 2}
+    - target: {fileID: 8631326715450666075, guid: 9498bd4b1a3bd274e8a0c6b5cc0b2da2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9b57e44934c997446aaed7127f3910b3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9498bd4b1a3bd274e8a0c6b5cc0b2da2, type: 3}
 --- !u!4 &2757728400309629595 stripped
@@ -675,6 +731,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DireccionDerecha
       objectReference: {fileID: 0}
+    - target: {fileID: 8424073627695423409, guid: 08979e8860487f244a8d8386110396d8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 037a1d425884c4f4585b5c5232e08f08, type: 2}
     - target: {fileID: 8835409689826365435, guid: 08979e8860487f244a8d8386110396d8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -741,6 +801,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cuentagotas
       objectReference: {fileID: 0}
+    - target: {fileID: 8298574850218983827, guid: a1ddfb6e9a4d6d14ba33b71fe08b0ac1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc5491b8719282f42b0b0e20815450d4, type: 2}
+    - target: {fileID: 8298574850218983827, guid: a1ddfb6e9a4d6d14ba33b71fe08b0ac1, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: c956f2c8fcdf84c4cb348b4bd24667d2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1ddfb6e9a4d6d14ba33b71fe08b0ac1, type: 3}
 --- !u!4 &8393550096003090288 stripped
@@ -811,6 +879,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f20780723034ff643922ae728bd45567, type: 2}
     - target: {fileID: 919132149155446097, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
       propertyPath: m_Name
       value: ProbetaBotijo (2)
@@ -959,6 +1031,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f20780723034ff643922ae728bd45567, type: 2}
     - target: {fileID: 919132149155446097, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
       propertyPath: m_Name
       value: ProbetaBotijo
@@ -1171,6 +1247,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79c3241a267fd13478a4639d58acac7e, type: 2}
     - target: {fileID: 919132149155446097, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
       propertyPath: m_Name
       value: ProbetaBotijo (3)
@@ -1237,6 +1317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EstanteriaMedia
       objectReference: {fileID: 0}
+    - target: {fileID: 7899621021478184781, guid: e57d10d09ab9791429a7b2fe8f74dc08, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1341c85c3e3668e4a819430f955c6d70, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e57d10d09ab9791429a7b2fe8f74dc08, type: 3}
 --- !u!4 &6495174347559765303 stripped
@@ -1255,6 +1339,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EstanteriaEstrecha
       objectReference: {fileID: 0}
+    - target: {fileID: 2739138395551587395, guid: 9498bd4b1a3bd274e8a0c6b5cc0b2da2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9b57e44934c997446aaed7127f3910b3, type: 2}
     - target: {fileID: 3050997279716101326, guid: 9498bd4b1a3bd274e8a0c6b5cc0b2da2, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1299,6 +1387,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 4223495565392684519, guid: 9498bd4b1a3bd274e8a0c6b5cc0b2da2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aa6772d77d31e714ab77f4cd2f236885, type: 2}
+    - target: {fileID: 6152563459644528516, guid: 9498bd4b1a3bd274e8a0c6b5cc0b2da2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1341c85c3e3668e4a819430f955c6d70, type: 2}
+    - target: {fileID: 7340573074924255251, guid: 9498bd4b1a3bd274e8a0c6b5cc0b2da2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9b57e44934c997446aaed7127f3910b3, type: 2}
+    - target: {fileID: 7481560362831227905, guid: 9498bd4b1a3bd274e8a0c6b5cc0b2da2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aa6772d77d31e714ab77f4cd2f236885, type: 2}
+    - target: {fileID: 8154970862212036881, guid: 9498bd4b1a3bd274e8a0c6b5cc0b2da2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1341c85c3e3668e4a819430f955c6d70, type: 2}
+    - target: {fileID: 8631326715450666075, guid: 9498bd4b1a3bd274e8a0c6b5cc0b2da2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9b57e44934c997446aaed7127f3910b3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9498bd4b1a3bd274e8a0c6b5cc0b2da2, type: 3}
 --- !u!4 &5277175485566339184 stripped
@@ -1369,10 +1481,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 683e730f3964b48489be0e642dc35e0f, type: 2}
+    - target: {fileID: -3477821731311062464, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79c3241a267fd13478a4639d58acac7e, type: 2}
     - target: {fileID: 919132149155446097, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
       propertyPath: m_Name
       value: ConjuntoProbetas (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1603246306389932429, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79c3241a267fd13478a4639d58acac7e, type: 2}
+    - target: {fileID: 4407187375235809858, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79c3241a267fd13478a4639d58acac7e, type: 2}
+    - target: {fileID: 8424073627695423409, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79c3241a267fd13478a4639d58acac7e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
 --- !u!4 &7763420212690882201 stripped
@@ -1443,6 +1575,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 00a1801f09f2614458887924580b28ea, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79c3241a267fd13478a4639d58acac7e, type: 2}
     - target: {fileID: 919132149155446097, guid: 00a1801f09f2614458887924580b28ea, type: 3}
       propertyPath: m_Name
       value: ProbetaLarga (2)
@@ -1517,6 +1653,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79c3241a267fd13478a4639d58acac7e, type: 2}
     - target: {fileID: 919132149155446097, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
       propertyPath: m_Name
       value: ProbetaBotijo (6)
@@ -1591,10 +1731,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 84.716
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 683e730f3964b48489be0e642dc35e0f, type: 2}
+    - target: {fileID: -3477821731311062464, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79c3241a267fd13478a4639d58acac7e, type: 2}
     - target: {fileID: 919132149155446097, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
       propertyPath: m_Name
       value: ConjuntoProbetas (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1603246306389932429, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79c3241a267fd13478a4639d58acac7e, type: 2}
+    - target: {fileID: 4407187375235809858, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79c3241a267fd13478a4639d58acac7e, type: 2}
+    - target: {fileID: 8424073627695423409, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79c3241a267fd13478a4639d58acac7e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df825641a45f8f94fa4bc2fe1ef404e2, type: 3}
 --- !u!4 &8296302081364312712 stripped
@@ -1665,6 +1825,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f20780723034ff643922ae728bd45567, type: 2}
     - target: {fileID: 919132149155446097, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
       propertyPath: m_Name
       value: ProbetaBotijo (1)
@@ -1683,6 +1847,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997587776543941608}
     m_Modifications:
+    - target: {fileID: 4956357165525325619, guid: 383b7041893e0274da9fb803caa618d0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79c3241a267fd13478a4639d58acac7e, type: 2}
     - target: {fileID: 6089896155490462812, guid: 383b7041893e0274da9fb803caa618d0, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -1745,6 +1913,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997587776543941608}
     m_Modifications:
+    - target: {fileID: -8977713186528765520, guid: 985dfe6d67fb76d46b91537f23960e69, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 97e40089e49160f4d898c3f4e3dadc24, type: 2}
     - target: {fileID: -8679921383154817045, guid: 985dfe6d67fb76d46b91537f23960e69, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -1801,10 +1973,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7798175757374839549, guid: 985dfe6d67fb76d46b91537f23960e69, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8c357ebb74cdba4aa5808cb7b28aaa6, type: 2}
+    - target: {fileID: -6551531487045393207, guid: 985dfe6d67fb76d46b91537f23960e69, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8c357ebb74cdba4aa5808cb7b28aaa6, type: 2}
+    - target: {fileID: -5605824327705146453, guid: 985dfe6d67fb76d46b91537f23960e69, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 63f3cff2b83c2aa4e96f40d9ce2c756f, type: 2}
+    - target: {fileID: -3233184894843762586, guid: 985dfe6d67fb76d46b91537f23960e69, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 97e40089e49160f4d898c3f4e3dadc24, type: 2}
     - target: {fileID: 919132149155446097, guid: 985dfe6d67fb76d46b91537f23960e69, type: 3}
       propertyPath: m_Name
       value: Nosecomosellamaesto (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2305302597091861298, guid: 985dfe6d67fb76d46b91537f23960e69, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 97e40089e49160f4d898c3f4e3dadc24, type: 2}
+    - target: {fileID: 8527430096837335539, guid: 985dfe6d67fb76d46b91537f23960e69, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8c357ebb74cdba4aa5808cb7b28aaa6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 985dfe6d67fb76d46b91537f23960e69, type: 3}
 --- !u!4 &8133205817461349239 stripped
@@ -1875,6 +2071,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79c3241a267fd13478a4639d58acac7e, type: 2}
     - target: {fileID: 919132149155446097, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
       propertyPath: m_Name
       value: ProbetaBotijo (8)
@@ -1893,6 +2093,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997587776543941608}
     m_Modifications:
+    - target: {fileID: 4956357165525325619, guid: 383b7041893e0274da9fb803caa618d0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79c3241a267fd13478a4639d58acac7e, type: 2}
     - target: {fileID: 6089896155490462812, guid: 383b7041893e0274da9fb803caa618d0, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -2011,6 +2215,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79c3241a267fd13478a4639d58acac7e, type: 2}
     - target: {fileID: 919132149155446097, guid: 0536f087fd6ae7c45910dc70d0497690, type: 3}
       propertyPath: m_Name
       value: ProbetaBotijo (5)
