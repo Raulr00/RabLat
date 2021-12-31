@@ -30,10 +30,11 @@ namespace coins
             else if (other.CompareTag("Magnet"))
             {
                 playerPos = other.GetComponentInParent<Transform>().position;
+                magnetized = true;
             }
         }
 
-        private void OnCollisionStay(Collision other)
+        private void OnTriggerStay(Collider other)
         {
             if (other.gameObject.CompareTag("Magnet"))
             {
@@ -46,7 +47,7 @@ namespace coins
             if (magnetized)
             {
                 Vector3 dir = playerPos - transform.position;
-                transform.Translate(dir.normalized * magSpeed * Time.fixedDeltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, playerPos, magSpeed);
             }
         }
 

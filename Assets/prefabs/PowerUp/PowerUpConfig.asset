@@ -17,8 +17,9 @@ MonoBehaviour:
   - {fileID: 474771359841477702, guid: f64f7dedd1e6ab44ab553e4c69a1e868, type: 3}
   - {fileID: 5866220676838157319, guid: 4679f1a38cd00914ab32a8c44f7f83e1, type: 3}
   - {fileID: 1452044244229987023, guid: b193a635b45b9594585e61ce103b63f7, type: 3}
+  - {fileID: 1782835276933973484, guid: 548cb583c2f1c124abecf8d618f1dada, type: 3}
   ids:
-  - Ghost
-  - PointsX2
   - Slow
+  - PointsX2
+  - Ghost
   - FullHP

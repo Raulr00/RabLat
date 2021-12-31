@@ -42,7 +42,7 @@ namespace PowerUps.Types
             obj.layer = newLayer;
             foreach (Transform child in obj.transform)
             {
-                if(child == null) continue;
+                if(child == null || child.gameObject.CompareTag("Magnet")) continue;
                 SetLayerRecusively(child.gameObject, newLayer);
             }
         }
