@@ -29,5 +29,7 @@ public class carga : MonoBehaviour
             yield return 20f;
         }
         AsyncOperation op = SceneManager.LoadSceneAsync(1);
+
+        
     }
 }
