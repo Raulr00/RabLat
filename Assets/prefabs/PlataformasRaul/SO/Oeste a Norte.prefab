@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5566381566371597378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7243059759151930902}
+  - component: {fileID: 915902991398392739}
+  m_Layer: 0
+  m_Name: Oeste a Norte
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7243059759151930902
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5566381566371597378}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &915902991398392739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5566381566371597378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f36e313c605628b4bbc6420c23138d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tamano: {x: 9.89, y: 7.19}
+  prefabsLvl:
+  - {fileID: 6793084812568524904, guid: b4dfb9dbd0ec50b46ad53a54f9d229dd, type: 3}
+  - {fileID: 4830232395087517968, guid: deb3a3f0d20261843a2d9a72f98e2659, type: 3}
+  - {fileID: 8674172711191516860, guid: d6039cfefb6c4c042af3a6b698a8c607, type: 3}
+  entrada: 1
+  salida: 4

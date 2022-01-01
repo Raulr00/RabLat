@@ -109,6 +109,30 @@ public class generadorNivel : MonoBehaviour
 
        // Debug.Log("Tama�o en y " + piezaAnt.tamano.y);
         switch (piezaAnt.salida) {
+            case datosPiezas.Direcciones.norte2:
+                sigPoscionesEntrada = datosPiezas.Direcciones.sur2;
+                spawnPos = spawnPos + new Vector3(0, 0, piezaAnt.tamano.x);
+                break;
+            case datosPiezas.Direcciones.norte3:
+                sigPoscionesEntrada = datosPiezas.Direcciones.sur3;
+                spawnPos = spawnPos + new Vector3(0, 0, piezaAnt.tamano.x);
+                break;
+            case datosPiezas.Direcciones.este:
+                sigPoscionesEntrada = datosPiezas.Direcciones.oeste;
+                //spawnPos = spawnPos + new Vector3(piezaAnt.tamano.x, 0, 0);
+                spawnPos = spawnPos + new Vector3(piezaAnt.tamano.y, 0, 0);
+                break;
+            case datosPiezas.Direcciones.oeste:
+                sigPoscionesEntrada = datosPiezas.Direcciones.este;
+                // spawnPos = spawnPos + new Vector3(-piezaAnt.tamano.x, 0, 0);
+                spawnPos = spawnPos + new Vector3(-piezaAnt.tamano.y, 0, 0);
+                break;
+
+
+
+
+
+         /*   //verga
             case datosPiezas.Direcciones.norte:
                 sigPoscionesEntrada = datosPiezas.Direcciones.sur;
                 spawnPos = spawnPos + new Vector3(0, 0, piezaAnt.tamano.x);
@@ -134,7 +158,7 @@ public class generadorNivel : MonoBehaviour
                 spawnPos = spawnPos + new Vector3(-piezaAnt.tamano.y, 0, 0);
 
 
-                break;
+                break;*/
         }
 
         for (int i = 0; i < piezas.Length; i++) {

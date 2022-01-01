@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6196cca6e7c698d45a953f0765313c8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dificultadPieza: 2
+  dificultadPieza: 1
 --- !u!1 &5806571316803328455
 GameObject:
   m_ObjectHideFlags: 0
