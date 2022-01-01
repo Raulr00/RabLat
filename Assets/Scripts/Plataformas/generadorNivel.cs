@@ -85,10 +85,10 @@ public class generadorNivel : MonoBehaviour
         piezaAnt = piezaSpawn;
         if (objeto.GetComponentInChildren<PowerUpSpawner>() != null)
         {
-            if (countPwrUp >= pwrUpPlatforms)
-                Debug.Log("Tiene spawner");
-            else
-                Debug.Log("No tiene spawner");
+            if (countPwrUp >= pwrUpPlatforms) { }
+            //  Debug.Log("Tiene spawner");
+            else { }
+              //  Debug.Log("No tiene spawner");
             
             objeto.GetComponentInChildren<PowerUpSpawner>().spawnable = (countPwrUp >= pwrUpPlatforms);
         }

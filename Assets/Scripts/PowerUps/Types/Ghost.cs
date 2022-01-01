@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Net.NetworkInformation;
-using UnityEditor.Experimental.GraphView;
+﻿using System.Collections;
 using UnityEngine;
 
 namespace PowerUps.Types

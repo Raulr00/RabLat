@@ -121,6 +121,8 @@ namespace Player
 
         void Update()
         {
+
+            Debug.Log(Input.gyro.gravity);
           //  Debug.Log("anim idle");
             if (!GameManager.moverse)
                 return;
@@ -137,7 +139,16 @@ namespace Player
 
                 if (moves == 1 || moves == 3)
                 {
+
+                    // offsetZ = Input.acceleration.z;
                     offsetZ = Input.acceleration.z;
+
+                    Debug.Log("1 " + offsetZ);
+                    int zz = (int)(offsetZ * 10);
+                    Debug.Log("2 " + zz);
+                    Debug.Log("3 " + ((float)zz / 1000));
+                    offsetZ = (float)zz / 10;
+
                 }
 
                 transform.Rotate(new Vector3(0, -90, 0));
@@ -156,8 +167,14 @@ namespace Player
 
                 if (moves == 1 || moves == 3)
                 {
+                    // offsetZ = Input.acceleration.z;
                     offsetZ = Input.acceleration.z;
-
+                    
+                    Debug.Log("1 " + offsetZ);
+                    int zz = (int)(offsetZ * 10);
+                    Debug.Log("2 " + zz);
+                    Debug.Log("3 " + ((float)zz / 1000));
+                    offsetZ = (float)zz / 10;
 
 
                 }
@@ -187,7 +204,7 @@ namespace Player
             //    transform.position = new Vector3(transform.position.x - 0.1f, transform.position.y, transform.position.z);
 
             //}
-            Vector3 acce = Input.acceleration;
+            Quaternion acce = Input.gyro.attitude;
             Vector3 dir = Vector3.zero;
             dir = Input.acceleration;
             if (dir.sqrMagnitude > 1)
@@ -200,8 +217,16 @@ namespace Player
 
             if (moves == 1)
             {
+               
+
+                // Debug.Log("4 " + dir.z);
+                int zzz = (int)(Input.acceleration.z * 10);
+              /// Debug.Log("5 " + zzz);
+               // Debug.Log("6 " + ((float)zzz / 10));
+                float auxx = (float)zzz / 10;
+                Debug.Log("6 "+auxx);
                 direccion = new Vector3(gameObject.transform.forward.x, gameObject.transform.forward.y,
-                    gameObject.transform.forward.z - (dir.z - offsetZ));
+                    gameObject.transform.forward.z - dir.x);
 
                // Debug.Log(dir.z+" "+ offsetZ);
                 //  transform.Translate(direccion * Time.deltaTime /* velPersonaje*/, Space.World);
@@ -248,9 +273,12 @@ namespace Player
             else if (moves == 3)
             {
                 //      texto.text = "FALSO";
-
+                int zzz = (int)(Input.acceleration.z * 10);
+                /// Debug.Log("5 " + zzz);
+                // Debug.Log("6 " + ((float)zzz / 10));
+                float auxx = (float)zzz / 10;
                 direccion = new Vector3(gameObject.transform.forward.x, gameObject.transform.forward.y,
-                gameObject.transform.forward.z - (dir.z - offsetZ));
+                gameObject.transform.forward.z + dir.x);
 
                 GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + direccion * velPersonaje * Time.deltaTime);
 
