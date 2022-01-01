@@ -8,6 +8,7 @@ public class menuPrincipal : MonoBehaviour
     public static event menu empezarPartida;
 
     public GameObject canvasMenu;
+    public GameObject canvasIngame;
 
 
     //Esto se modifica desde el script de resultados
@@ -23,6 +24,7 @@ public class menuPrincipal : MonoBehaviour
             //Hacer el countDown
             Debug.Log("no Mostrat menu");
             canvasMenu.SetActive(false);
+            canvasIngame.SetActive(true);
             empezarPartida();
         }
         else
