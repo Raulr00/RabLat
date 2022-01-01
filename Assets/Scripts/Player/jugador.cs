@@ -29,9 +29,19 @@ namespace Player
 
         [SerializeField]public GameObject magnet;
 
-
+        public GameObject popup;
         void Awake()
         {
+            if (PlayerPrefs.GetString("tuto", "true").Equals("true"))
+            {
+                popup.SetActive(true);
+            }
+            else {
+                popup.SetActive(false);
+            }
+
+
+
             animator = GetComponentInChildren<Animator>();
             animator.SetBool("Run", false);
 
@@ -55,6 +65,15 @@ namespace Player
             Debug.Log("empezar llamado");
             GameManager.moverse = true;
             animator.SetBool("Run", true);
+
+            if (PlayerPrefs.GetString("tuto", "True").Equals("True"))
+            {
+                popup.SetActive(true);
+            }
+            else
+            {
+                popup.SetActive(false);
+            }
         }
 
         private void OnEnable()

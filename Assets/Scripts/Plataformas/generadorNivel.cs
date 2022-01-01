@@ -57,7 +57,7 @@ public class generadorNivel : MonoBehaviour
     {
         if (jugador.transform.position.z > distanciaIncDif&& distanciaIncDif<300) {
             distanciaIncDif += 100;
-            dificultadActual++;
+          //  dificultadActual++;
         }
 
     }
