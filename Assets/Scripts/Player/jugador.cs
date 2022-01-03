@@ -118,7 +118,91 @@ namespace Player
         }
 
         // Update is called once per frame
+        private void FixedUpdate()
+        {
+            if (!GameManager.moverse)
+                return;
+            Quaternion acce = Input.gyro.attitude;
+            Vector3 dir = Vector3.zero;
+            dir = Input.acceleration;
+            if (dir.sqrMagnitude > 1)
+                dir.Normalize();
 
+            Vector3 direccion = Vector3.zero;
+
+            // Debug.Log(transform.forward);
+
+
+            if (moves == 1)
+            {
+
+
+                // Debug.Log("4 " + dir.z);
+                int zzz = (int)(Input.acceleration.z * 10);
+                /// Debug.Log("5 " + zzz);
+                // Debug.Log("6 " + ((float)zzz / 10));
+                float auxx = (float)zzz / 10;
+                Debug.Log("6 " + auxx);
+                direccion = new Vector3(gameObject.transform.forward.x, gameObject.transform.forward.y,
+                    gameObject.transform.forward.z - dir.x);
+
+                // Debug.Log(dir.z+" "+ offsetZ);
+                //  transform.Translate(direccion * Time.deltaTime /* velPersonaje*/, Space.World);
+                //transform.Translate(gameObject.transform.forward * Time.deltaTime * velPersonaje, Space.World);
+
+                //    Debug.Log(direccion * velPersonaje * Time.deltaTime);
+                // transform.position += direccion * velPersonaje * Time.deltaTime;
+                GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + direccion * velPersonaje * Time.deltaTime);
+
+                // GetComponent<Rigidbody>().MovePosition(transform.position + direccion * velPersonaje * Time.deltaTime);
+
+            }
+            else if (moves == 0)
+            {
+                //         texto.text = "FALSO";
+
+                direccion = new Vector3(gameObject.transform.forward.x + dir.x, gameObject.transform.forward.y,
+                    gameObject.transform.forward.z);
+                //  Debug.Log("fnwiefl");
+                // transform.Translate(direccion * Time.deltaTime /*velPersonaje*/, Space.World);
+                //transform.position += direccion * velPersonaje * Time.deltaTime;
+                GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + direccion * velPersonaje * Time.deltaTime);
+                // int i = (int) transform.forward.x;
+
+
+
+                //  transform.position += direccion  * Time.deltaTime*2f;
+                //  GetComponent<Rigidbody>().MovePosition(transform.position + direccion * velPersonaje * Time.deltaTime);
+            }
+            else if (moves == 2)
+            {
+                //   texto.text = "FALSO";
+
+                direccion = new Vector3(gameObject.transform.forward.x + dir.x, gameObject.transform.forward.y,
+                    gameObject.transform.forward.z);
+                //  transform.Translate(direccion * Time.deltaTime /*velPersonaje*/, Space.World);
+
+                GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + direccion * velPersonaje * Time.deltaTime);
+
+
+                // transform.Translate(gameObject.transform.forward * Time.deltaTime * velPersonaje, Space.World);
+                //  int i = (int)transform.forward.x;
+            }
+            else if (moves == 3)
+            {
+                //      texto.text = "FALSO";
+                int zzz = (int)(Input.acceleration.z * 10);
+                /// Debug.Log("5 " + zzz);
+                // Debug.Log("6 " + ((float)zzz / 10));
+                float auxx = (float)zzz / 10;
+                direccion = new Vector3(gameObject.transform.forward.x, gameObject.transform.forward.y,
+                gameObject.transform.forward.z + dir.x);
+
+                GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + direccion * velPersonaje * Time.deltaTime);
+
+                //  transform.Translate(direccion * Time.deltaTime /*velPersonaje*/, Space.World);
+            }
+        }
         void Update()
         {
 
@@ -204,86 +288,86 @@ namespace Player
             //    transform.position = new Vector3(transform.position.x - 0.1f, transform.position.y, transform.position.z);
 
             //}
-            Quaternion acce = Input.gyro.attitude;
-            Vector3 dir = Vector3.zero;
-            dir = Input.acceleration;
-            if (dir.sqrMagnitude > 1)
-                dir.Normalize();
+          //  Quaternion acce = Input.gyro.attitude;
+          //  Vector3 dir = Vector3.zero;
+          //  dir = Input.acceleration;
+          //  if (dir.sqrMagnitude > 1)
+          //      dir.Normalize();
 
-            Vector3 direccion = Vector3.zero;
+          //  Vector3 direccion = Vector3.zero;
 
-          // Debug.Log(transform.forward);
+          //// Debug.Log(transform.forward);
 
 
-            if (moves == 1)
-            {
+          //  if (moves == 1)
+          //  {
                
 
-                // Debug.Log("4 " + dir.z);
-                int zzz = (int)(Input.acceleration.z * 10);
-              /// Debug.Log("5 " + zzz);
-               // Debug.Log("6 " + ((float)zzz / 10));
-                float auxx = (float)zzz / 10;
-                Debug.Log("6 "+auxx);
-                direccion = new Vector3(gameObject.transform.forward.x, gameObject.transform.forward.y,
-                    gameObject.transform.forward.z - dir.x);
+          //      // Debug.Log("4 " + dir.z);
+          //      int zzz = (int)(Input.acceleration.z * 10);
+          //    /// Debug.Log("5 " + zzz);
+          //     // Debug.Log("6 " + ((float)zzz / 10));
+          //      float auxx = (float)zzz / 10;
+          //      Debug.Log("6 "+auxx);
+          //      direccion = new Vector3(gameObject.transform.forward.x, gameObject.transform.forward.y,
+          //          gameObject.transform.forward.z - dir.x);
 
-               // Debug.Log(dir.z+" "+ offsetZ);
-                //  transform.Translate(direccion * Time.deltaTime /* velPersonaje*/, Space.World);
-                //transform.Translate(gameObject.transform.forward * Time.deltaTime * velPersonaje, Space.World);
+          //     // Debug.Log(dir.z+" "+ offsetZ);
+          //      //  transform.Translate(direccion * Time.deltaTime /* velPersonaje*/, Space.World);
+          //      //transform.Translate(gameObject.transform.forward * Time.deltaTime * velPersonaje, Space.World);
 
-                //    Debug.Log(direccion * velPersonaje * Time.deltaTime);
-                // transform.position += direccion * velPersonaje * Time.deltaTime;
-                GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + direccion * velPersonaje * Time.deltaTime);
+          //      //    Debug.Log(direccion * velPersonaje * Time.deltaTime);
+          //      // transform.position += direccion * velPersonaje * Time.deltaTime;
+          //      GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + direccion * velPersonaje * Time.deltaTime);
 
-                // GetComponent<Rigidbody>().MovePosition(transform.position + direccion * velPersonaje * Time.deltaTime);
+          //      // GetComponent<Rigidbody>().MovePosition(transform.position + direccion * velPersonaje * Time.deltaTime);
 
-            }
-            else if (moves == 0)
-            {
-                //         texto.text = "FALSO";
+          //  }
+          //  else if (moves == 0)
+          //  {
+          //      //         texto.text = "FALSO";
 
-                direccion = new Vector3(gameObject.transform.forward.x + dir.x, gameObject.transform.forward.y,
-                    gameObject.transform.forward.z);
-              //  Debug.Log("fnwiefl");
-                // transform.Translate(direccion * Time.deltaTime /*velPersonaje*/, Space.World);
-                //transform.position += direccion * velPersonaje * Time.deltaTime;
-               GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position+ direccion * velPersonaje * Time.deltaTime);
-                // int i = (int) transform.forward.x;
+          //      direccion = new Vector3(gameObject.transform.forward.x + dir.x, gameObject.transform.forward.y,
+          //          gameObject.transform.forward.z);
+          //    //  Debug.Log("fnwiefl");
+          //      // transform.Translate(direccion * Time.deltaTime /*velPersonaje*/, Space.World);
+          //      //transform.position += direccion * velPersonaje * Time.deltaTime;
+          //     GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position+ direccion * velPersonaje * Time.deltaTime);
+          //      // int i = (int) transform.forward.x;
 
                 
 
-                //  transform.position += direccion  * Time.deltaTime*2f;
-              //  GetComponent<Rigidbody>().MovePosition(transform.position + direccion * velPersonaje * Time.deltaTime);
-            }
-            else if (moves == 2)
-            {
-                //   texto.text = "FALSO";
+          //      //  transform.position += direccion  * Time.deltaTime*2f;
+          //    //  GetComponent<Rigidbody>().MovePosition(transform.position + direccion * velPersonaje * Time.deltaTime);
+          //  }
+          //  else if (moves == 2)
+          //  {
+          //      //   texto.text = "FALSO";
 
-                direccion = new Vector3(gameObject.transform.forward.x + dir.x, gameObject.transform.forward.y,
-                    gameObject.transform.forward.z) ;
-                //  transform.Translate(direccion * Time.deltaTime /*velPersonaje*/, Space.World);
+          //      direccion = new Vector3(gameObject.transform.forward.x + dir.x, gameObject.transform.forward.y,
+          //          gameObject.transform.forward.z) ;
+          //      //  transform.Translate(direccion * Time.deltaTime /*velPersonaje*/, Space.World);
 
-                GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + direccion * velPersonaje * Time.deltaTime);
+          //      GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + direccion * velPersonaje * Time.deltaTime);
 
 
-                // transform.Translate(gameObject.transform.forward * Time.deltaTime * velPersonaje, Space.World);
-                //  int i = (int)transform.forward.x;
-            }
-            else if (moves == 3)
-            {
-                //      texto.text = "FALSO";
-                int zzz = (int)(Input.acceleration.z * 10);
-                /// Debug.Log("5 " + zzz);
-                // Debug.Log("6 " + ((float)zzz / 10));
-                float auxx = (float)zzz / 10;
-                direccion = new Vector3(gameObject.transform.forward.x, gameObject.transform.forward.y,
-                gameObject.transform.forward.z + dir.x);
+          //      // transform.Translate(gameObject.transform.forward * Time.deltaTime * velPersonaje, Space.World);
+          //      //  int i = (int)transform.forward.x;
+          //  }
+          //  else if (moves == 3)
+          //  {
+          //      //      texto.text = "FALSO";
+          //      int zzz = (int)(Input.acceleration.z * 10);
+          //      /// Debug.Log("5 " + zzz);
+          //      // Debug.Log("6 " + ((float)zzz / 10));
+          //      float auxx = (float)zzz / 10;
+          //      direccion = new Vector3(gameObject.transform.forward.x, gameObject.transform.forward.y,
+          //      gameObject.transform.forward.z + dir.x);
 
-                GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + direccion * velPersonaje * Time.deltaTime);
+          //      GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + direccion * velPersonaje * Time.deltaTime);
 
-                //  transform.Translate(direccion * Time.deltaTime /*velPersonaje*/, Space.World);
-            }
+          //      //  transform.Translate(direccion * Time.deltaTime /*velPersonaje*/, Space.World);
+          //  }
 
 
 
