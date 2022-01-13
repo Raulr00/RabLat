@@ -48,6 +48,6 @@ MonoBehaviour:
   - {fileID: 5768154364908947161, guid: 4a4bf44388757ee4bb79ef0ab77b2377, type: 3}
   - {fileID: 7079287944021608087, guid: 366174012d8982146be6a53cb815e16f, type: 3}
   - {fileID: 623135351763642427, guid: 9e88570b987e008498bd8eff8d5ba064, type: 3}
-  - {fileID: 2246615533838021003, guid: 5256f00bc3cacb24c96b7bf74e84f3e8, type: 3}
+  - {fileID: 4862861321442135827, guid: 99ddc5b8deb04e548b79f9c6d016bc6b, type: 3}
   entrada: 2
   salida: 8

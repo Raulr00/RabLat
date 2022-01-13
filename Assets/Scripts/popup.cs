@@ -5,6 +5,8 @@ using UnityEngine;
 public class popup : MonoBehaviour
 {
     bool unaVez = true;
+    public GameObject uitutorial;
+    public static bool mov;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,12 +16,12 @@ public class popup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!unaVez && Input.GetKeyDown(KeyCode.P)) {
-            Time.timeScale = 1;
-            Destroy(gameObject);
+    }
 
-
-        }
+  public  void reactivarGame() {
+        Time.timeScale = 1;
+        Destroy(gameObject);
+        Debug.Log("Hola");
     }
 
     private void OnTriggerEnter(Collider other)
@@ -28,6 +30,7 @@ public class popup : MonoBehaviour
         {
             unaVez = false;
             Time.timeScale = 0;
+            uitutorial.SetActive(true);
             Debug.Log("Sale mensaje AD");
         }
     }
