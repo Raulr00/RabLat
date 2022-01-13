@@ -9,6 +9,7 @@ namespace Player
 {
     public class jugador : MonoBehaviour
     {
+        
         public GameObject mapa;
         public GameObject gizmo;
         private Animator animator;
@@ -19,8 +20,8 @@ namespace Player
         public GameObject camera;
 
        public int moves = 0;
-        public float velPersonaje = 10;
-        public float minVel = 10;
+        public float velPersonaje = 7;
+        public float minVel = 7;
         public int[] direccion = {0, 1, 2, 3};
 
 
@@ -50,9 +51,9 @@ namespace Player
                 animator.SetBool("Run", true);
             }
             desplazamiento = new Vector3(0, 0, 0.01f);
+            if(!GameManager.mostrarMenu)//Para cuando le das a volver a jugar sin que se muestre el menú principa
             StartCoroutine(aumentarVelcidad());
             
-         //   Debug.Log(transform.forward);
         }
 
         private void OnDestroy()
@@ -65,6 +66,8 @@ namespace Player
             Debug.Log("empezar llamado");
             GameManager.moverse = true;
             animator.SetBool("Run", true);
+            StartCoroutine(aumentarVelcidad());
+
 
             if (PlayerPrefs.GetString("tuto", "True").Equals("True"))
             {
@@ -142,7 +145,7 @@ namespace Player
                 /// Debug.Log("5 " + zzz);
                 // Debug.Log("6 " + ((float)zzz / 10));
                 float auxx = (float)zzz / 10;
-                Debug.Log("6 " + auxx);
+              //  Debug.Log("6 " + auxx);
                 direccion = new Vector3(gameObject.transform.forward.x, gameObject.transform.forward.y,
                     gameObject.transform.forward.z - dir.x);
 
@@ -206,7 +209,7 @@ namespace Player
         void Update()
         {
 
-            Debug.Log(Input.gyro.gravity);
+          //  Debug.Log(Input.gyro.gravity);
           //  Debug.Log("anim idle");
             if (!GameManager.moverse)
                 return;
@@ -254,10 +257,10 @@ namespace Player
                     // offsetZ = Input.acceleration.z;
                     offsetZ = Input.acceleration.z;
                     
-                    Debug.Log("1 " + offsetZ);
+                 //   Debug.Log("1 " + offsetZ);
                     int zz = (int)(offsetZ * 10);
-                    Debug.Log("2 " + zz);
-                    Debug.Log("3 " + ((float)zz / 1000));
+                   // Debug.Log("2 " + zz);
+               //     Debug.Log("3 " + ((float)zz / 1000));
                     offsetZ = (float)zz / 10;
 
 
