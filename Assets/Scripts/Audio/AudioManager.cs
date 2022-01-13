@@ -8,9 +8,10 @@ public class AudioManager : MonoBehaviour
 {
    public static AudioManager Instance;
    public AudioConfig audioConfig;
+   public AudioSource audioSource;
    public enum Sound
    {
-      
+      CheeseBite
    }
    private void Awake()
    {
@@ -24,7 +25,14 @@ public class AudioManager : MonoBehaviour
       }
 
       audioConfig = Instantiate(audioConfig);
+
+      audioSource = gameObject.AddComponent<AudioSource>(); 
       
       DontDestroyOnLoad(this.gameObject);
+   }
+
+   public void PlaySound(Sound sound)
+   {
+      audioSource.PlayOneShot(audioConfig.GetAudioClip(sound));
    }
 }
