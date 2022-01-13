@@ -9233,7 +9233,7 @@ MonoBehaviour:
   velPersonaje: 10
   minVel: 10
   direccion: 00000000000000000000000000000000
-  magnet: {fileID: 0}
+  magnet: {fileID: 1752856517}
   popup: {fileID: 1553874922}
 --- !u!54 &1488137668
 Rigidbody:
@@ -10944,13 +10944,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1752856518}
   - component: {fileID: 1752856519}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Magnet
-  m_TagString: Untagged
+  m_TagString: Magnet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1752856518
 Transform:
   m_ObjectHideFlags: 0
