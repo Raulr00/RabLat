@@ -10,7 +10,7 @@ public class ScoreUI : MonoBehaviour
     [SerializeField]public TextMeshProUGUI highScoreTxt;
     private void OnEnable()
     {
-        int score = PlayerPrefs.GetInt("Score");
+        int score = PlayerPrefs.GetInt("Score", 0);
         int highScore = PlayerPrefs.GetInt("HighScore", -1);
         if (score > highScore)
         {
