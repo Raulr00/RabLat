@@ -6,6 +6,22 @@ using UnityEngine.SceneManagement;
 
 public class muerte : MonoBehaviour
 {
+    private void OnEnable()
+    {
+        vida.muerteSinVida += morirPorVida;
+    }
+    private void OnDisable()
+    {
+        vida.muerteSinVida -= morirPorVida;
+    }
+    private void morirPorVida() {
+        generadorNivel.spawnPos = generadorNivel.spawnInicialAux;
+        GameManager.moverse = false;
+        GetComponent<Animator>().SetBool("Crash", true);
+        StartCoroutine(pasarEscena(5f));
+        gameObject.GetComponent<BoxCollider>().enabled = false;
+
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag.Equals("muerte"))

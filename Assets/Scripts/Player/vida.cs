@@ -11,7 +11,10 @@ public class vida : MonoBehaviour
     public float tiempoVivoMax;
     float tiempoRestante;
     bool bajar = true;
+    bool unaVez = true;
 
+    public delegate void muerte();
+    public static event muerte muerteSinVida;
     private void OnEnable()
     {
         monedas.monedaRecodiga += sumarVida;
@@ -45,9 +48,9 @@ public class vida : MonoBehaviour
             tiempoRestante -= Time.deltaTime*0.25f;
             vidaImagen.fillAmount = tiempoRestante / tiempoVivoMax;
         }
-        else
-        {
-            // Time.timeScale = 0;
+        if (tiempoRestante <= 0&&unaVez) {
+            unaVez = false;
+            muerteSinVida();
         }
     }
 
