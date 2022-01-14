@@ -8,6 +8,7 @@ TagManager:
   - muerte
   - pared
   - Magnet
+  - cg
   layers:
   - Default
   - TransparentFX

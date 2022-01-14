@@ -313,7 +313,7 @@ GameObject:
   - component: {fileID: 8234413712385149369}
   m_Layer: 8
   m_Name: Box062
-  m_TagString: Untagged
+  m_TagString: cg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

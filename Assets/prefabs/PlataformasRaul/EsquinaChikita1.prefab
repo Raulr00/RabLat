@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1494714358133787293}
   m_Layer: 8
   m_Name: Object001
-  m_TagString: Untagged
+  m_TagString: cg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -457,7 +457,7 @@ GameObject:
   - component: {fileID: 1497003908679536257}
   m_Layer: 8
   m_Name: Box047
-  m_TagString: Untagged
+  m_TagString: cg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

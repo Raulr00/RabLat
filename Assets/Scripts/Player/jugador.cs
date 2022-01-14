@@ -235,6 +235,10 @@ namespace Player
             if (Input.GetKeyDown(KeyCode.A) || swipeMovil.swipeLeft)
             {
                 moves = (moves - 1);
+                if (moves == 2) {
+                    moves = 3;
+                    return;
+                }
                 if (moves < 0)
                 {
                     moves = 3;
@@ -265,6 +269,11 @@ namespace Player
             else if (Input.GetKeyDown(KeyCode.D) || swipeMovil.swipeRight)
             {
                 moves = (moves + 1) % 4;
+                if (moves == 2)
+                {
+                    moves = 1;
+                    return;
+                }
                 transform.Rotate(new Vector3(0, 90, 0));
               //  Debug.Log(transform.forward);
 
@@ -287,7 +296,7 @@ namespace Player
                 //   transform.rotation = Quaternion.RotateTowards(transform.rotation, new Quaternion(gameObject.transform.forward.x, gameObject.transform.forward.y, gameObject.transform.forward.z, 0), 720*Time.deltaTime);
                 //  Debug.Log(gameObject.transform.forward);
             }
-            else if (Input.GetKeyDown(KeyCode.W) || swipeMovil.swipeUp)
+            else if ((Input.GetKeyDown(KeyCode.W) || swipeMovil.swipeUp)&&checkGround.isGrounded)
             {
                 GetComponent<Rigidbody>().AddForce(Vector3.up * 200f);
                 ;
