@@ -8,7 +8,7 @@ public class ScoreUI : MonoBehaviour
 {
     [SerializeField]public TextMeshProUGUI scoreTxt;
     [SerializeField]public TextMeshProUGUI highScoreTxt;
-    private void OnEnable()
+    private void Awake()
     {
         int score = PlayerPrefs.GetInt("Score", 0);
         int highScore = PlayerPrefs.GetInt("HighScore", -1);
@@ -18,6 +18,7 @@ public class ScoreUI : MonoBehaviour
             highScore = score;
         }
 
+        PlayerPrefs.Save();
         scoreTxt.text = score.ToString();
         highScoreTxt.text = highScore.ToString();
 

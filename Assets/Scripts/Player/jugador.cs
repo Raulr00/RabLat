@@ -9,7 +9,6 @@ namespace Player
 {
     public class jugador : MonoBehaviour
     {
-        
         public GameObject mapa;
         public GameObject gizmo;
         private Animator animator;
@@ -20,8 +19,8 @@ namespace Player
         public GameObject camera;
 
        public int moves = 0;
-        public float velPersonaje = 7;
-        public float minVel = 7;
+        public float velPersonaje = 10;
+        public float minVel = 10;
         public int[] direccion = {0, 1, 2, 3};
 
 
@@ -51,9 +50,9 @@ namespace Player
                 animator.SetBool("Run", true);
             }
             desplazamiento = new Vector3(0, 0, 0.01f);
-            if(!GameManager.mostrarMenu)//Para cuando le das a volver a jugar sin que se muestre el menú principa
             StartCoroutine(aumentarVelcidad());
             
+         //   Debug.Log(transform.forward);
         }
 
         private void OnDestroy()
@@ -63,11 +62,9 @@ namespace Player
 
         //Se llama cuando se le da play
         void empezar() {
-         //   Debug.Log("empezar llamado");
+            Debug.Log("empezar llamado");
             GameManager.moverse = true;
             animator.SetBool("Run", true);
-            StartCoroutine(aumentarVelcidad());
-
 
             if (PlayerPrefs.GetString("tuto", "True").Equals("True"))
             {
@@ -101,25 +98,9 @@ namespace Player
         {
             if(magnet == null) return;
             magnet.SetActive(true);
-            StartCoroutine(ponerAnim());
             StartCoroutine(BackToNormal(f));
         }
 
-        IEnumerator ponerAnim()
-        {
-            GameObject g = GameObject.Find("MagnetAnim ");
-            g.GetComponent<Animator>().enabled = true;
-            g.GetComponent<Animator>().Play("Entry");
-
-
-            yield return new WaitForSeconds(10f);
-            // g.GetComponent<Image>().enabled = false;
-
-            // g.GetComponent<Image>().enabled=true;
-            g.GetComponent<Animator>().enabled = false;
-            g.GetComponent<Image>().enabled = false;
-
-        }
         private IEnumerator BackToNormal(float secs)
         {
             yield return new WaitForSeconds(secs);
@@ -161,7 +142,7 @@ namespace Player
                 /// Debug.Log("5 " + zzz);
                 // Debug.Log("6 " + ((float)zzz / 10));
                 float auxx = (float)zzz / 10;
-              //  Debug.Log("6 " + auxx);
+                Debug.Log("6 " + auxx);
                 direccion = new Vector3(gameObject.transform.forward.x, gameObject.transform.forward.y,
                     gameObject.transform.forward.z - dir.x);
 
@@ -225,7 +206,7 @@ namespace Player
         void Update()
         {
 
-          //  Debug.Log(Input.gyro.gravity);
+            // Debug.Log(Input.gyro.gravity);
           //  Debug.Log("anim idle");
             if (!GameManager.moverse)
                 return;
@@ -235,10 +216,6 @@ namespace Player
             if (Input.GetKeyDown(KeyCode.A) || swipeMovil.swipeLeft)
             {
                 moves = (moves - 1);
-                if (moves == 2) {
-                    moves = 3;
-                    return;
-                }
                 if (moves < 0)
                 {
                     moves = 3;
@@ -250,10 +227,10 @@ namespace Player
                     // offsetZ = Input.acceleration.z;
                     offsetZ = Input.acceleration.z;
 
-                 //   Debug.Log("1 " + offsetZ);
+                    Debug.Log("1 " + offsetZ);
                     int zz = (int)(offsetZ * 10);
-                 //   Debug.Log("2 " + zz);
-               //     Debug.Log("3 " + ((float)zz / 1000));
+                    Debug.Log("2 " + zz);
+                    Debug.Log("3 " + ((float)zz / 1000));
                     offsetZ = (float)zz / 10;
 
                 }
@@ -269,11 +246,6 @@ namespace Player
             else if (Input.GetKeyDown(KeyCode.D) || swipeMovil.swipeRight)
             {
                 moves = (moves + 1) % 4;
-                if (moves == 2)
-                {
-                    moves = 1;
-                    return;
-                }
                 transform.Rotate(new Vector3(0, 90, 0));
               //  Debug.Log(transform.forward);
 
@@ -282,10 +254,10 @@ namespace Player
                     // offsetZ = Input.acceleration.z;
                     offsetZ = Input.acceleration.z;
                     
-                 //   Debug.Log("1 " + offsetZ);
+                    // Debug.Log("1 " + offsetZ);
                     int zz = (int)(offsetZ * 10);
-                   // Debug.Log("2 " + zz);
-               //     Debug.Log("3 " + ((float)zz / 1000));
+                    // Debug.Log("2 " + zz);
+                    // Debug.Log("3 " + ((float)zz / 1000));
                     offsetZ = (float)zz / 10;
 
 
@@ -296,15 +268,16 @@ namespace Player
                 //   transform.rotation = Quaternion.RotateTowards(transform.rotation, new Quaternion(gameObject.transform.forward.x, gameObject.transform.forward.y, gameObject.transform.forward.z, 0), 720*Time.deltaTime);
                 //  Debug.Log(gameObject.transform.forward);
             }
-            else if ((Input.GetKeyDown(KeyCode.W) || swipeMovil.swipeUp)&&checkGround.isGrounded)
+            else if (Input.GetKeyDown(KeyCode.W) || swipeMovil.swipeUp)
             {
                 GetComponent<Rigidbody>().AddForce(Vector3.up * 200f);
-                ;
+                SFXManager.Instance.PlaySound(SFXManager.Sound.Jump);
                 animator.SetTrigger("Jump");
             }
             else if (Input.GetKeyDown(KeyCode.S) || swipeMovil.swipeDown)
             {
                 gizmo.transform.localScale = new Vector3(1, 0.2f, 1);
+                SFXManager.Instance.PlaySound(SFXManager.Sound.Swipe);
                 animator.SetTrigger("Slide");
                 StartCoroutine(agacharse());
             }
