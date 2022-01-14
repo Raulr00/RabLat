@@ -39,7 +39,9 @@ public class muerte : MonoBehaviour
 
     IEnumerator pasarEscena(float time)
     {
+        Debug.Log("Score: " + CoinManager.Instance.coins);
         PlayerPrefs.SetInt("Score", CoinManager.Instance.coins);
+        PlayerPrefs.Save();
         yield return new WaitForSeconds(time);
         MusicManager.Instance.StopAndPlaySong(MusicManager.Song.DeathTheme);
         SceneManager.LoadScene("resultados");

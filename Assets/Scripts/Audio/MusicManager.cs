@@ -15,7 +15,7 @@ public class MusicManager : MonoBehaviour
     public static MusicManager Instance;
 
     [SerializeField] public MusicConfig musicConfig;
-    private AudioSource _audioSource;
+    public AudioSource _audioSource;
 
     private void Awake()
     {

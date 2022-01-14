@@ -1599,16 +1599,16 @@ MonoBehaviour:
   m_FillRect: {fileID: 13444132}
   m_HandleRect: {fileID: 674167259}
   m_Direction: 0
-  m_MinValue: -80
-  m_MaxValue: 20
+  m_MinValue: 0
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: -35.7
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 998056444}
         m_TargetAssemblyTypeName: configuracion, Assembly-CSharp
-        m_MethodName: setVolume
+        m_MethodName: SetMusicVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2934,6 +2934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicConfig: {fileID: 11400000, guid: 72f59a323df9b46448f6c8c2a26330b6, type: 2}
+  _audioSource: {fileID: 0}
 --- !u!4 &331579982
 Transform:
   m_ObjectHideFlags: 0
@@ -6595,7 +6596,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: b4338ed37a2e79447b8da2d549367ebd, type: 2}
   sliderMusicaOpciones: {fileID: 140541953}
+  sliderSFXOpciones: {fileID: 1221270877}
   sliderMusicaIngame: {fileID: 2127675375}
+  sliderSFXIngame: {fileID: 1962353260}
   tick: {fileID: 789073754}
 --- !u!1 &1003303460
 GameObject:
@@ -7603,7 +7606,7 @@ GameObject:
   - component: {fileID: 1221270876}
   - component: {fileID: 1221270877}
   m_Layer: 5
-  m_Name: SliderSonidosEspeciales
+  m_Name: SliderSFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7679,10 +7682,22 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 998056444}
+        m_TargetAssemblyTypeName: configuracion, Assembly-CSharp
+        m_MethodName: SetSFXVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1257586758
 GameObject:
   m_ObjectHideFlags: 0
@@ -12862,7 +12877,7 @@ GameObject:
   - component: {fileID: 1962353259}
   - component: {fileID: 1962353260}
   m_Layer: 5
-  m_Name: SliderSonidosEspeciales
+  m_Name: SliderSFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12938,10 +12953,22 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 998056444}
+        m_TargetAssemblyTypeName: configuracion, Assembly-CSharp
+        m_MethodName: SetSFXVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2002731589
 GameObject:
   m_ObjectHideFlags: 0
@@ -14256,10 +14283,22 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 998056444}
+        m_TargetAssemblyTypeName: configuracion, Assembly-CSharp
+        m_MethodName: SetMusicVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2146922836
 GameObject:
   m_ObjectHideFlags: 0

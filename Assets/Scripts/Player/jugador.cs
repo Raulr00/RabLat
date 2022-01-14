@@ -206,7 +206,7 @@ namespace Player
         void Update()
         {
 
-            Debug.Log(Input.gyro.gravity);
+            // Debug.Log(Input.gyro.gravity);
           //  Debug.Log("anim idle");
             if (!GameManager.moverse)
                 return;
@@ -254,10 +254,10 @@ namespace Player
                     // offsetZ = Input.acceleration.z;
                     offsetZ = Input.acceleration.z;
                     
-                    Debug.Log("1 " + offsetZ);
+                    // Debug.Log("1 " + offsetZ);
                     int zz = (int)(offsetZ * 10);
-                    Debug.Log("2 " + zz);
-                    Debug.Log("3 " + ((float)zz / 1000));
+                    // Debug.Log("2 " + zz);
+                    // Debug.Log("3 " + ((float)zz / 1000));
                     offsetZ = (float)zz / 10;
 
 

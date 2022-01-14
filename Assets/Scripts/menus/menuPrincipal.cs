@@ -29,7 +29,7 @@ public class menuPrincipal : MonoBehaviour
         }
         else
         {
-            Debug.Log(" Mostrat menu");
+            // Debug.Log(" Mostrat menu");
         }
 
     }

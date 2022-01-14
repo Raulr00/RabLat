@@ -7,14 +7,17 @@ public class configuracion : MonoBehaviour
 {
     public AudioMixer audioMixer;
     public Slider sliderMusicaOpciones;
+    public Slider sliderSFXOpciones;
     public Slider sliderMusicaIngame;
+    public Slider sliderSFXIngame;
     public Toggle tick;
     private void Awake()
     {
-        float f = PlayerPrefs.GetFloat("volumen", 0);
-        audioMixer.SetFloat("volumen",f);
-        sliderMusicaOpciones.value = f;
-        sliderMusicaIngame.value = f;
+        float musixVol = PlayerPrefs.GetFloat("MusicVol", 0.5f);
+        float sfxVol = PlayerPrefs.GetFloat("SFXVol", 0.5f);
+        MusicManager.Instance._audioSource.volume = musixVol;
+        sliderMusicaOpciones.value = musixVol;
+        sliderMusicaIngame.value = musixVol;
         if (PlayerPrefs.GetString("tuto", "True").Equals("True"))
         {
             tick.isOn = true;
@@ -27,15 +30,24 @@ public class configuracion : MonoBehaviour
 
     }
 
-    public void setVolume(float f) {
-        audioMixer.SetFloat("volumen",f);
+    public void SetMusicVolume(float f)
+    {
+        MusicManager.Instance._audioSource.volume = f;
      
-        PlayerPrefs.SetFloat("volumen", f);
+        PlayerPrefs.SetFloat("MusicVol", f);
+        PlayerPrefs.Save();
+    }
+    
+    public void SetSFXVolume(float f)
+    {
+        SFXManager.Instance.audioSource.volume = f;
+     
+        PlayerPrefs.SetFloat("SFXVol", f);
         PlayerPrefs.Save();
     }
 
     public void setTutorial(bool b) {
-        Debug.Log(b.ToString());
+        // Debug.Log(b.ToString());
         PlayerPrefs.SetString("tuto", b.ToString());
         PlayerPrefs.Save();
 
