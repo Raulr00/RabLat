@@ -33,7 +33,7 @@ public class MusicManager : MonoBehaviour
         if (!_audioSource)
             _audioSource = gameObject.AddComponent<AudioSource>();
         _audioSource.volume = PlayerPrefs.GetFloat("MusicVol", 0.3f);
-        
+
         switch (SceneManager.GetActiveScene().name)
         {
             case "Tutorial":
@@ -43,7 +43,7 @@ public class MusicManager : MonoBehaviour
                 StopAndPlaySong(Song.DeathTheme);
                 break;
         }
-        
+
         DontDestroyOnLoad(gameObject);
     }
 

@@ -6,7 +6,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Custom/Audio/SFXConfig")]
 public class SFXConfig : ScriptableObject
 {
-    [Serializable] public struct SoundAudioClip
+    [Serializable]
+    public struct SoundAudioClip
     {
         public AudioClip audioClip;
         public SFXManager.Sound sound;

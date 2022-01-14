@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 [CreateAssetMenu(menuName = "Custom/Audio/MusicConfig")]
 public class MusicConfig : ScriptableObject
 {
-    [Serializable]public struct MusicAudioClip
+    [Serializable]
+    public struct MusicAudioClip
     {
         public AudioClip audioClip;
         public MusicManager.Song song;
