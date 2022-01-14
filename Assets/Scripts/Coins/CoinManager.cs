@@ -2,7 +2,7 @@
 using System.Collections;
 using PowerUps.Types;
 using UnityEngine;
-
+using UnityEngine.UI;
 namespace coins
 {
     public class CoinManager : MonoBehaviour
@@ -46,10 +46,24 @@ namespace coins
         private void HandleX2Boost()
         {
             multiplier *= 2;
+            StartCoroutine( ponerAnim());
             StartCoroutine(ReturnToNormal());
         }
+        IEnumerator ponerAnim()
+        {
+            GameObject g = GameObject.Find("x2anim");
+            g.GetComponent<Animator>().enabled = true;
+            g.GetComponent<Animator>().Play("Entry");
 
-        private IEnumerator ReturnToNormal()
+
+            yield return new WaitForSeconds(10f);
+            // g.GetComponent<Image>().enabled = false;
+
+            // g.GetComponent<Image>().enabled=true;
+            g.GetComponent<Animator>().enabled = false;
+            g.GetComponent<Image>().enabled = false;
+        }
+            private IEnumerator ReturnToNormal()
         {
             yield return new WaitForSeconds(boostTime);
             multiplier /= 2;

@@ -72,7 +72,7 @@ public class vida : MonoBehaviour
 
         float aux=tiempoRestante+ 0.5f;
         bajar = false;
-        Debug.Log("1");
+      //  Debug.Log("1");
         /*while (tiempoRestante<aux&& tiempoRestante < tiempoVivoMax) {
 
             tiempoRestante += Time.deltaTime*0.6f;
@@ -88,7 +88,7 @@ public class vida : MonoBehaviour
 
         //  yield return new WaitForSeconds(0.1f);
         //   Debug.Log("destruido");
-        Debug.Log("2");
+      //  Debug.Log("2");
         bajar = true;
 
     }

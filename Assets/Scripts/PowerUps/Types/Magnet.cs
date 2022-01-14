@@ -1,5 +1,7 @@
 ﻿using System;
 using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
 
 namespace PowerUps.Types
 {
@@ -14,5 +16,6 @@ namespace PowerUps.Types
             magnetEvent?.Invoke(duration);
             Destroy(gameObject);
         }
+
     }
 }

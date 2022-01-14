@@ -22,14 +22,14 @@ public class menuPrincipal : MonoBehaviour
         if (!GameManager.mostrarMenu)
         {
             //Hacer el countDown
-            Debug.Log("no Mostrat menu");
+          // Debug.Log("no Mostrat menu");
             canvasMenu.SetActive(false);
             canvasIngame.SetActive(true);
             empezarPartida();
         }
         else
         {
-            Debug.Log(" Mostrat menu");
+         //   Debug.Log(" Mostrat menu");
         }
 
     }

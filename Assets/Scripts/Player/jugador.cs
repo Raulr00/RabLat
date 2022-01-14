@@ -63,7 +63,7 @@ namespace Player
 
         //Se llama cuando se le da play
         void empezar() {
-            Debug.Log("empezar llamado");
+         //   Debug.Log("empezar llamado");
             GameManager.moverse = true;
             animator.SetBool("Run", true);
             StartCoroutine(aumentarVelcidad());
@@ -101,9 +101,25 @@ namespace Player
         {
             if(magnet == null) return;
             magnet.SetActive(true);
+            StartCoroutine(ponerAnim());
             StartCoroutine(BackToNormal(f));
         }
 
+        IEnumerator ponerAnim()
+        {
+            GameObject g = GameObject.Find("MagnetAnim ");
+            g.GetComponent<Animator>().enabled = true;
+            g.GetComponent<Animator>().Play("Entry");
+
+
+            yield return new WaitForSeconds(10f);
+            // g.GetComponent<Image>().enabled = false;
+
+            // g.GetComponent<Image>().enabled=true;
+            g.GetComponent<Animator>().enabled = false;
+            g.GetComponent<Image>().enabled = false;
+
+        }
         private IEnumerator BackToNormal(float secs)
         {
             yield return new WaitForSeconds(secs);
@@ -230,10 +246,10 @@ namespace Player
                     // offsetZ = Input.acceleration.z;
                     offsetZ = Input.acceleration.z;
 
-                    Debug.Log("1 " + offsetZ);
+                 //   Debug.Log("1 " + offsetZ);
                     int zz = (int)(offsetZ * 10);
-                    Debug.Log("2 " + zz);
-                    Debug.Log("3 " + ((float)zz / 1000));
+                 //   Debug.Log("2 " + zz);
+               //     Debug.Log("3 " + ((float)zz / 1000));
                     offsetZ = (float)zz / 10;
 
                 }
