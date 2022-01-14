@@ -271,12 +271,13 @@ namespace Player
             else if (Input.GetKeyDown(KeyCode.W) || swipeMovil.swipeUp)
             {
                 GetComponent<Rigidbody>().AddForce(Vector3.up * 200f);
-                ;
+                SFXManager.Instance.PlaySound(SFXManager.Sound.Jump);
                 animator.SetTrigger("Jump");
             }
             else if (Input.GetKeyDown(KeyCode.S) || swipeMovil.swipeDown)
             {
                 gizmo.transform.localScale = new Vector3(1, 0.2f, 1);
+                SFXManager.Instance.PlaySound(SFXManager.Sound.Swipe);
                 animator.SetTrigger("Slide");
                 StartCoroutine(agacharse());
             }

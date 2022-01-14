@@ -9,6 +9,7 @@ namespace PowerUps.Types
         private void OnCollisionEnter(Collision other)
         {
             if(!other.gameObject.name.Equals("player")) return;
+            SFXManager.Instance.PlaySound(SFXManager.Sound.PowerUp);
             SetLayerRecusively(other.gameObject, 10);
             StartCoroutine(ReturnToNormal(other.gameObject));
             HidePowerUp();

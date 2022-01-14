@@ -4,14 +4,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class AudioManager : MonoBehaviour
+public class SFXManager : MonoBehaviour
 {
-   public static AudioManager Instance;
-   public AudioConfig audioConfig;
+   public static SFXManager Instance;
+   public SFXConfig sfxConfig;
    public AudioSource audioSource;
    public enum Sound
    {
-      CheeseBite
+      CheeseBite,
+      HitWall,
+      Helicopter,
+      PowerUp,
+      Jump,
+      Swipe
    }
    private void Awake()
    {
@@ -24,15 +29,13 @@ public class AudioManager : MonoBehaviour
          Instance = this;
       }
 
-      audioConfig = Instantiate(audioConfig);
+      sfxConfig = Instantiate(sfxConfig);
 
-      audioSource = gameObject.AddComponent<AudioSource>(); 
-      
-      DontDestroyOnLoad(this.gameObject);
+      audioSource = gameObject.AddComponent<AudioSource>();
    }
 
    public void PlaySound(Sound sound)
    {
-      audioSource.PlayOneShot(audioConfig.GetAudioClip(sound));
+      audioSource.PlayOneShot(sfxConfig.GetAudioClip(sound));
    }
 }

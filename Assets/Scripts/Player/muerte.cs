@@ -14,6 +14,7 @@ public class muerte : MonoBehaviour
 
 
             GameManager.moverse = false;
+            SFXManager.Instance.PlaySound(SFXManager.Sound.Helicopter);
             GetComponent<Animator>().SetBool("Fall", true);
             GetComponent<Animator>().SetBool("Fly", true);
             gameObject.GetComponent<BoxCollider>().enabled = false;
@@ -28,6 +29,7 @@ public class muerte : MonoBehaviour
             {
                 generadorNivel.spawnPos = generadorNivel.spawnInicialAux;
                 GameManager.moverse = false;
+                SFXManager.Instance.PlaySound(SFXManager.Sound.HitWall);
                 GetComponent<Animator>().SetBool("Crash", true);
                 StartCoroutine(pasarEscena(5f));
                 gameObject.GetComponent<BoxCollider>().enabled = false;
@@ -39,6 +41,7 @@ public class muerte : MonoBehaviour
     {
         PlayerPrefs.SetInt("Score", CoinManager.Instance.coins);
         yield return new WaitForSeconds(time);
+        MusicManager.Instance.StopAndPlaySong(MusicManager.Song.DeathTheme);
         SceneManager.LoadScene("resultados");
     }
 }
