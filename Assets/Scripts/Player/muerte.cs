@@ -29,6 +29,7 @@ public class muerte : MonoBehaviour
             generadorNivel.spawnPos = generadorNivel.spawnInicialAux; //METERSELO CUANDO HAGAS LO DE LA PARED
 
 
+            SFXManager.Instance.PlaySound(SFXManager.Sound.Helicopter);
             GameManager.moverse = false;
             GetComponent<Animator>().SetBool("Fall", true);
             GetComponent<Animator>().SetBool("Fly", true);
@@ -42,6 +43,7 @@ public class muerte : MonoBehaviour
         {
             if (Mathf.Abs(Vector3.Dot(transform.forward, other.gameObject.transform.forward)) > 0)
             {
+                SFXManager.Instance.PlaySound(SFXManager.Sound.HitWall);
                 generadorNivel.spawnPos = generadorNivel.spawnInicialAux;
                 GameManager.moverse = false;
                 GetComponent<Animator>().SetBool("Crash", true);
@@ -54,7 +56,9 @@ public class muerte : MonoBehaviour
     IEnumerator pasarEscena(float time)
     {
         PlayerPrefs.SetInt("Score", CoinManager.Instance.coins);
+        PlayerPrefs.Save();
         yield return new WaitForSeconds(time);
+        MusicManager.Instance.StopAndPlaySong(MusicManager.Song.DeathTheme);
         SceneManager.LoadScene("resultados");
     }
 }

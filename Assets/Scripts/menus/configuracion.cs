@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,14 +8,30 @@ public class configuracion : MonoBehaviour
 {
     public AudioMixer audioMixer;
     public Slider sliderMusicaOpciones;
+    public Slider sliderSFXOpciones;
     public Slider sliderMusicaIngame;
+    public Slider sliderSFXaIngame;
     public Toggle tick;
     private void Awake()
     {
-        float f = PlayerPrefs.GetFloat("volumen", 0);
-        audioMixer.SetFloat("volumen",f);
-        sliderMusicaOpciones.value = f;
-        sliderMusicaIngame.value = f;
+        float musicVol = PlayerPrefs.GetFloat("MusicVol", 0.3f);
+        float sfxVol = PlayerPrefs.GetFloat("SFXVol", 0.5f);
+
+        MusicManager.Instance._audioSource.volume = musicVol;
+        try
+        {
+            SFXManager.Instance.audioSource.volume = sfxVol;
+        }
+        catch
+        {
+            Debug.Log("No AudioManager encontrado");
+        }
+        
+        
+        sliderMusicaOpciones.value = musicVol;
+        sliderMusicaIngame.value = musicVol;
+        sliderSFXaIngame.value = sfxVol;
+        sliderSFXOpciones.value = sfxVol;
         if (PlayerPrefs.GetString("tuto", "True").Equals("True"))
         {
             tick.isOn = true;
@@ -27,10 +44,26 @@ public class configuracion : MonoBehaviour
 
     }
 
-    public void setVolume(float f) {
-        audioMixer.SetFloat("volumen",f);
+    public void SetMusicVolume(float f)
+    {
+        MusicManager.Instance._audioSource.volume = f;
      
-        PlayerPrefs.SetFloat("volumen", f);
+        PlayerPrefs.SetFloat("MusicVol", f);
+        PlayerPrefs.Save();
+    }
+    
+    public void SetSFXVolume(float f)
+    {
+        try
+        {
+            SFXManager.Instance.audioSource.volume = f;
+        }
+        catch
+        {
+            Debug.Log("No AudioManager encontrado");
+        }
+        
+        PlayerPrefs.SetFloat("SFXVol", f);
         PlayerPrefs.Save();
     }
 

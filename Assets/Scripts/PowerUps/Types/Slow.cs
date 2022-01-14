@@ -12,6 +12,7 @@ namespace PowerUps.Types
 
         private void OnCollisionEnter(Collision other)
         {
+            SFXManager.Instance.PlaySound(SFXManager.Sound.CheeseBite);
             slowEvent?.Invoke(slow);
             Destroy(gameObject);
         }

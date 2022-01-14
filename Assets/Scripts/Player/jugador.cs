@@ -51,7 +51,7 @@ namespace Player
                 animator.SetBool("Run", true);
             }
             desplazamiento = new Vector3(0, 0, 0.01f);
-            if(!GameManager.mostrarMenu)//Para cuando le das a volver a jugar sin que se muestre el menú principa
+            if(!GameManager.mostrarMenu)//Para cuando le das a volver a jugar sin que se muestre el menï¿½ principa
             StartCoroutine(aumentarVelcidad());
             
         }
@@ -299,11 +299,12 @@ namespace Player
             else if ((Input.GetKeyDown(KeyCode.W) || swipeMovil.swipeUp)&&checkGround.isGrounded)
             {
                 GetComponent<Rigidbody>().AddForce(Vector3.up * 200f);
-                ;
+                SFXManager.Instance.PlaySound(SFXManager.Sound.Jump);
                 animator.SetTrigger("Jump");
             }
             else if (Input.GetKeyDown(KeyCode.S) || swipeMovil.swipeDown)
             {
+                SFXManager.Instance.PlaySound(SFXManager.Sound.Swipe);
                 gizmo.transform.localScale = new Vector3(1, 0.2f, 1);
                 animator.SetTrigger("Slide");
                 StartCoroutine(agacharse());

@@ -13,6 +13,7 @@ namespace PowerUps.Types
         public float duration = 10;
         private void OnCollisionEnter(Collision other)
         {
+            SFXManager.Instance.PlaySound(SFXManager.Sound.CheeseBite);
             magnetEvent?.Invoke(duration);
             Destroy(gameObject);
         }
