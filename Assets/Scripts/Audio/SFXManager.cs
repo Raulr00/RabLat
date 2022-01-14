@@ -32,6 +32,7 @@ public class SFXManager : MonoBehaviour
       sfxConfig = Instantiate(sfxConfig);
 
       audioSource = gameObject.AddComponent<AudioSource>();
+      audioSource.volume = PlayerPrefs.GetFloat("SFXVol", 0.5f);
    }
 
    public void PlaySound(Sound sound)
