@@ -24,7 +24,6 @@ namespace coins
             if (other.name.Equals("player") && unaVez)
             {
                 monedaRecodiga?.Invoke();
-                SFXManager.Instance.PlaySound(SFXManager.Sound.CheeseBite);
                 unaVez = false;
                 Destroy(gameObject);
             }

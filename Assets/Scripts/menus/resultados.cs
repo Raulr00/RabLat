@@ -10,14 +10,12 @@ public class resultados : MonoBehaviour
 
         GameManager.mostrarMenu = false;
         GameManager.moverse = true;
-        MusicManager.Instance.StopAndPlaySong(MusicManager.Song.PlayTheme);
         SceneManager.LoadScene("Tutorial");
     }
     public void cambiarEscenaJugarConMenu()
     {
         GameManager.mostrarMenu = true;
         GameManager.moverse = false;
-        MusicManager.Instance.StopAndPlaySong(MusicManager.Song.PlayTheme);
         SceneManager.LoadScene("Tutorial");
 
     }
