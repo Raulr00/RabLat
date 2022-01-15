@@ -28,9 +28,7 @@ public class PowerUpSpawner : MonoBehaviour
     {
         if(!_spawnable) 
             return;
-        
-        GetComponent<MeshRenderer>().enabled = true;
-        
+
         int rand = _random.Next(101);
         /*   Debug.Log(rand + "\n"+
                      (rand > spawnRate));*/
