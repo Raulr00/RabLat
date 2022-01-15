@@ -9,7 +9,7 @@ namespace PowerUps.Types
 
         private void OnCollisionEnter(Collision other)
         {
-            SFXManager.Instance.PlaySound(SFXManager.Sound.CheeseBite);
+            SFXManager.Instance.PlaySound(SFXManager.Sound.PowerUp);
             fullHpEvent?.Invoke();
             Destroy(gameObject);
         }
