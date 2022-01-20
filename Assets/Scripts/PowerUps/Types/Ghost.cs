@@ -7,10 +7,13 @@ namespace PowerUps.Types
     public class Ghost : PowerUp
     {
         public float duration = 10;
+        public Material ghostMat;
+        public Material normalMat;
         private void OnCollisionEnter(Collision other)
         {
-            if(!other.gameObject.name.Equals("player")) return;
+            if(!other.gameObject.name.Equals("player")) return;            
             SFXManager.Instance.PlaySound(SFXManager.Sound.PowerUp);
+            GameObject.Find("Rat").transform.GetChild(0).GetComponent<Renderer>().material = ghostMat;
             SetLayerRecusively(other.gameObject, 10);
             StartCoroutine(ReturnToNormal(other.gameObject));
             HidePowerUp();
@@ -39,6 +42,7 @@ namespace PowerUps.Types
             Debug.Log("Se comienza a cambiar la layer otra vez");
             SetLayerRecusively(player, 7);
             Debug.Log("Fin del ghost");
+            GameObject.Find("Rat").transform.GetChild(0).GetComponent<Renderer>().material = normalMat;
             Destroy(gameObject);
         }
 

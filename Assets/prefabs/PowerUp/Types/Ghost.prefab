@@ -62,6 +62,8 @@ MonoBehaviour:
   id: Ghost
   rotSpeed: 1
   duration: 10
+  ghostMat: {fileID: 2100000, guid: 79c3241a267fd13478a4639d58acac7e, type: 2}
+  normalMat: {fileID: 2100000, guid: a8c357ebb74cdba4aa5808cb7b28aaa6, type: 2}
 --- !u!1 &5909205248514594478
 GameObject:
   m_ObjectHideFlags: 0

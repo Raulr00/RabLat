@@ -43,7 +43,7 @@ public class muerte : MonoBehaviour
         {
             if (Mathf.Abs(Vector3.Dot(transform.forward, other.gameObject.transform.forward)) > 0)
             {
-                SFXManager.Instance.PlaySound(SFXManager.Sound.HitWall);
+                StartCoroutine(playSounds());                
                 generadorNivel.spawnPos = generadorNivel.spawnInicialAux;
                 GameManager.moverse = false;
                 GetComponent<Animator>().SetBool("Crash", true);
@@ -51,6 +51,13 @@ public class muerte : MonoBehaviour
                 gameObject.GetComponent<BoxCollider>().enabled = false;
             }
         }
+    }
+
+    IEnumerator playSounds()
+    {
+        SFXManager.Instance.PlaySound(SFXManager.Sound.HitWall);
+        yield return new WaitForSeconds(1.7f);
+        SFXManager.Instance.PlaySound(SFXManager.Sound.Helicopter);
     }
 
     IEnumerator pasarEscena(float time)
