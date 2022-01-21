@@ -39,4 +39,8 @@ public class SFXManager : MonoBehaviour
    {
       audioSource.PlayOneShot(sfxConfig.GetAudioClip(sound));
    }
+   public void PlaySample()
+   {
+      audioSource.PlayOneShot(sfxConfig.GetAudioClip(Sound.CheeseBite));
+   }
 }

@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace menus
@@ -22,9 +24,10 @@ namespace menus
 
             sliderMusic.onValueChanged.AddListener(delegate { SetMusicVolume(sliderMusic.value); });
             sliderSFX.onValueChanged.AddListener(delegate { SetSFXVolume(sliderSFX.value); });
+            
 
             if (!tick) return;
-            
+
             if (PlayerPrefs.GetString("tuto", "True").Equals("True"))
             {
                 tick.isOn = true;
@@ -33,7 +36,7 @@ namespace menus
             {
                 tick.isOn = false;
             }
-            
+
             tick.onValueChanged.AddListener(delegate { setTutorial(tick.isOn); });
         }
 
@@ -58,6 +61,11 @@ namespace menus
             Debug.Log(b.ToString());
             PlayerPrefs.SetString("tuto", b.ToString());
             PlayerPrefs.Save();
+        }
+
+        public void PlaySample()
+        {
+            SFXManager.Instance.PlaySample();
         }
     }
 }
