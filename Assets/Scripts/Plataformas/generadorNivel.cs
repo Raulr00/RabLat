@@ -107,7 +107,7 @@ public class generadorNivel : MonoBehaviour
 
         datosPiezas.Direcciones sigPoscionesEntrada = datosPiezas.Direcciones.norte;
 
-       // Debug.Log("Tama�o en y " + piezaAnt.tamano.y);
+      
         switch (piezaAnt.salida) {
             case datosPiezas.Direcciones.norte2:
                 sigPoscionesEntrada = datosPiezas.Direcciones.sur2;
@@ -132,7 +132,7 @@ public class generadorNivel : MonoBehaviour
 
 
 
-         /*   //verga
+         /*  
             case datosPiezas.Direcciones.norte:
                 sigPoscionesEntrada = datosPiezas.Direcciones.sur;
                 spawnPos = spawnPos + new Vector3(0, 0, piezaAnt.tamano.x);
